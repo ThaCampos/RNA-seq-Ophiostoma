@@ -1,0 +1,3 @@
+Gene count	pathway_class
+1	Metabolism of Complex Carbohydrates
+1	Nucleotide Metabolism

@@ -1,0 +1,22 @@
+Protein_ID	subject_id	Gene_ID	explevel_log	logFC	transcript_ID	goTermId	goName	gotermType	goAcc
+565949	Potri.010G052500.1	WUAT02001524.1	3.796520711	3.374050983	565949	8235	oxidoreductase activity	molecular_function	GO:0016491
+565949	Potri.010G052500.1	WUAT02001524.1	3.796520711	3.374050983	565949	8354	oxidoreductase activity, acting on the CH-OH group of donors, NAD or NADP as acceptor	molecular_function	GO:0016616
+565949	Potri.010G052500.1	WUAT02001524.1	3.796520711	3.374050983	565949	9306	5-exo-hydroxycamphor dehydrogenase activity	molecular_function	GO:0018452
+565949	Potri.010G052500.1	WUAT02001524.1	3.796520711	3.374050983	565949	17232	3-ketoglucose-reductase activity	molecular_function	GO:0048258
+565949	Potri.010G052500.1	WUAT02001524.1	3.796520711	3.374050983	565949	9305	epoxide dehydrogenase activity	molecular_function	GO:0018451
+565949	Potri.010G052500.1	WUAT02001524.1	3.796520711	3.374050983	565949	242	C-3 sterol dehydrogenase (C-4 sterol decarboxylase) activity	molecular_function	GO:0000252
+565949	Potri.010G052500.1	WUAT02001524.1	3.796520711	3.374050983	565949	8021	steroid dehydrogenase activity	molecular_function	GO:0016229
+565949	Potri.010G052500.1	WUAT02001524.1	3.796520711	3.374050983	565949	1781	mevaldate reductase activity	molecular_function	GO:0004495
+565949	Potri.010G052500.1	WUAT02001524.1	3.796520711	3.374050983	565949	4804	metabolic process	biological_process	GO:0008152
+565949	Potri.010G052500.1	WUAT02001524.1	3.796520711	3.374050983	565949	5482	gluconate dehydrogenase activity	molecular_function	GO:0008875
+565949	Potri.010G052500.1	WUAT02001524.1	3.796520711	3.374050983	565949	9307	2-hydroxytetrahydrofuran dehydrogenase activity	molecular_function	GO:0018453
+565949	Potri.010G052500.1	WUAT02001524.1	3.796520711	3.374050983	565949	1737	isocitrate dehydrogenase activity	molecular_function	GO:0004448
+565949	Potri.010G052500.1	WUAT02001524.1	3.796520711	3.374050983	565949	243	3-keto sterol reductase activity	molecular_function	GO:0000253
+580755	Potri.017G110300.5	WUAT02004004.1	3.907439208	2.569164211	580755	3196	glycolytic process	biological_process	GO:0006096
+580755	Potri.017G110300.5	WUAT02004004.1	3.907439208	2.569164211	580755	1748	L-lactate dehydrogenase activity	molecular_function	GO:0004459
+580755	Potri.017G110300.5	WUAT02004004.1	3.907439208	2.569164211	580755	1055	nucleic acid binding	molecular_function	GO:0003676
+783705	Potri.003G091200.1	WUAT02007878.1	4.651073277	2.57461263	783705	1055	nucleic acid binding	molecular_function	GO:0003676
+783705	Potri.003G091200.1	WUAT02007878.1	4.651073277	2.57461263	783705	2757	nucleus	cellular_component	GO:0005634
+783705	Potri.003G091200.1	WUAT02007878.1	4.651073277	2.57461263	783705	4913	zinc ion binding	molecular_function	GO:0008270
+806728	Potri.013G006400.1	WUAT02020335.1	1.619413112	2.07627474	806728	3946	intracellular protein transport	biological_process	GO:0006886
+806728	Potri.013G006400.1	WUAT02020335.1	1.619413112	2.07627474	806728	10941	clathrin vesicle coat	cellular_component	GO:0030125

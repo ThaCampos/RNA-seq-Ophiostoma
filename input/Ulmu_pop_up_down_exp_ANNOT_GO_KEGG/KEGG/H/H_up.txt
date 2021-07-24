@@ -1,0 +1,5 @@
+Protein_ID	ecNum	definition	catalyticActivity	cofactors	associatedDiseases	pathway	pathway_class	pathway_type	subject_id	Gene_ID	explevel_log	logFC	transcript_ID
+658944	1.3.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	\N	\N	\N	Potri.010G129800.6	WUAT02003459.1	3.011252788	4.771244015	658944
+769807	3.2.1.39	Glucan endo-1,3-beta-D-glucosidase.	Hydrolysis of 1,3-beta-D-glucosidic linkages in 1,3-beta-D-glucans.	\N	\N	Starch and sucrose metabolism	Metabolism of Complex Carbohydrates	METABOLIC	Potri.010G142800.1	WUAT02007590.1	4.845989091	2.725993298	769807
+822682	3.1.2.15	Ubiquitin thiolesterase.	Ubiquitin C-terminal thiolester + H(2)O = ubiquitin + a thiol.	\N	\N	\N	\N	\N	Potri.010G245100.5	WUAT02005335.1	8.519955804	2.077567631	822682
+832008	3.6.1.3	Adenosinetriphosphatase.	ATP + H(2)O = ADP + phosphate.	\N	Hemolytic anemia due to deficiency of adenosine triphosphatase; MIM:102800.	Purine metabolism	Nucleotide Metabolism	METABOLIC	Potri.006G188700.1	WUAT02015780.1	5.517702549	2.020989504	832008

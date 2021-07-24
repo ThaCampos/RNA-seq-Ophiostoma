@@ -1,0 +1,9 @@
+Gene count	pathway_class
+3	Metabolism of Complex Carbohydrates
+3	Nucleotide Metabolism
+2	Carbohydrate Metabolism
+1	Amino Acid Metabolism
+1	Biodegradation of Xenobiotics
+1	Metabolism of Cofactors and Vitamins
+1	Metabolism of Complex Lipids
+1	Replication and Repair

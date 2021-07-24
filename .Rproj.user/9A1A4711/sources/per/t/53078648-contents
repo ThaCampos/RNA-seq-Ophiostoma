@@ -1,0 +1,381 @@
+---
+title: "WGCNA"
+output: html_notebook
+---
+Clean the workspace
+Load WGCNA and additional necessary packages
+
+
+```{r Load libraries, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+# Repositories
+rm(list = ls())
+repos <- c("https://cran.rstudio.com/",
+           "https://bioconductor.org/packages/3.11/bioc",
+           "https://bioconductor.org/packages/3.11/data/annotation",
+           "https://bioconductor.org/packages/3.11/data/experiment")
+for (i in c("WGCNA", "cluster","rmarkdown", "clusterProfiler", 
+						"org.At.tair.db", "tidyverse", "KEGGprofile")) { 
+  if (i %in% rownames(installed.packages())) {
+    library(i, character.only = T)
+  } else { 
+    install.packages(i, dependencies = T, repos = repos)
+    library(i, character.only = T)
+  }
+}
+```
+
+
+```{r Set working directory, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+
+drive <- ifelse(length(list.files("E:/PhD")) == 0, "F:/PhD", "E:/PhD")
+
+knitr::opts_chunk$set(echo = TRUE, 
+                      root.dir = paste0(drive, "Results_from_sequencing_data-Karen_2016-2020/Results/Results with biomart counts/Results with hisat alignment/DEAwithCommonDegs"))
+options(stringsAsFactors = FALSE);
+
+```
+
+Load the previously saved data
+```{r, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+dat0 <- read.csv("Genes_filteredcounts2020-05-26.csv",
+                 row.names = 1, header = T)
+degs <- read.csv("DEGS_foldchange_cleaned.csv",
+                 row.names = 1, header = T)
+
+
+metadata <- read.csv("../Metadata_keptreps-27022019.csv", 
+                       header = T, row.names = 1)
+metadata <- metadata[rownames(metadata)[match(colnames(dat0),rownames(metadata))],]
+datExpr <- as.data.frame(t(dat0[rownames(dat0) %in% rownames(degs), 
+																colnames(dat0) %in% rownames(metadata)]))
+datExpr <- log2(datExpr+0.5)
+```
+
+Choose the soft threshold
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+# Choose a set of soft-thresholding powers
+powers <- c(c(1:10), seq(from = 12, to = 20, by = 2))
+# Call the network topology analysis function
+sft <- pickSoftThreshold(datExpr, powerVector = powers, verbose = 5)
+# Plot the results:
+sizeGrWindow(9, 5)
+par(mfrow = c(1,2));
+cex1 <- 0.9;
+# Scale-free topology fit index as a function of the soft-thresholding power
+plot(sft$fitIndices[, 1], -sign(sft$fitIndices[, 3]) * sft$fitIndices[, 2],
+		 xlab = "Soft Threshold (power)", 
+		 ylab = "Scale Free Topology Model Fit,signed R^2", type = "p",
+		 main = paste("Scale independence"))
+text(sft$fitIndices[, 1], -sign(sft$fitIndices[, 3]) * sft$fitIndices[, 2],
+		 labels = powers, cex = cex1, col = "red");
+# this line corresponds to using an R^2 cut-off of h
+abline(h = 0.90,col = "red")
+# Mean connectivity as a function of the soft-thresholding power
+plot(sft$fitIndices[, 1], sft$fitIndices[, 5],
+		 xlab = "Soft Threshold (power)",
+		 ylab = "Mean Connectivity", type = "p",
+		 main = paste("Mean connectivity"))
+text(sft$fitIndices[, 1], sft$fitIndices[, 5], 
+		 labels = powers, cex = cex1, col = "red")
+```
+Confirm all the columns of datExpr are numeric vectors and creat the modules.
+Here we take fost threshold with a model fit R^2 of at least 0.9 with highest mean connectivity.
+We don't want small modules, so here we choose minimum size of 30.
+We want similar modules to be merged, so if modules have similarity higher than 70%, they will be merged.
+```{r, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+for(i in 1:ncol(datExpr)){
+	datExpr[,i] <- as.numeric(datExpr[,i])
+}
+cor <- WGCNA::cor
+net <- blockwiseModules(datExpr, power = 14,
+												TOMType = "unsigned", minModuleSize = 30,
+												reassignThreshold = 0, mergeCutHeight = 0.3,
+												numericLabels = TRUE, verbose = 3)
+```
+Now we plot the dendrogram of genes with the modules
+```{r, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+# open a graphics window
+sizeGrWindow(12, 9)
+# Convert labels to colors for plotting
+moduleColors<- labels2colors(net$colors)
+# Plot the dendrogram and the module colors underneath
+plotDendroAndColors(net$dendrograms[[1]], moduleColors[net$blockGenes[[1]]],
+										"Module colors",
+										dendroLabels = FALSE, hang = 0.03,
+										addGuide = F)
+```
+Save the raw results
+```{r, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+moduleLabels <- net$colors
+MEs <- net$MEs;
+geneTree <- net$dendrograms[[1]];
+save(MEs, moduleLabels, moduleColors, geneTree, 
+     file = "effectors_DEGs-networkConstruction-auto.RData")
+```
+Now calculate the eigengenes and plot the distance tree for the modules
+```{r, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+#blockwise function already merges, so no need to calculate it separetely
+# Calculate eigengenes
+MEList <- moduleEigengenes(datExpr, colors = moduleColors)
+MEs <- MEList$eigengenes
+# Calculate dissimilarity of module eigengenes
+MEDiss <- 1 - cor(MEs);
+# Cluster module eigengenes
+METree <- hclust(as.dist(MEDiss), method = "average");
+# Plot the result
+sizeGrWindow(7, 6)
+plot(METree, main = "Clustering of module eigengenes",
+     xlab = "", sub = "")
+```
+
+Relating modules to external clinical traits and identifying important genes
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+# Define numbers of genes and samples
+nGenes <- ncol(datExpr);
+nSamples <- nrow(datExpr);
+# Take new eigen values
+datTraits <- metadata[, colnames(metadata) %in% 
+												c("Bar_expression_log2","Effector_expression_log2",
+													"Insert_size","Infection_EfP_B","Infection_EfB_B",
+													"Infection_EfP_O")]
+moduleTraitCor <- cor(MEs, datTraits, use = "p");
+moduleTraitPvalue <- corPvalueStudent(moduleTraitCor, nSamples);
+```
+Now we have the modules and the correlation with the following traits: Level of expression of Bar in and of the expressed effector gene in log~2~, the average library insert size, and the result of the infection with bacteria (plant expressing effector), with bacteria (bacteria expressing effector) and with oomycete.
+Now we plot a heatmap to see which correlations are significant.
+```{r fig.height=5, fig.width=10, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+sizeGrWindow(10,5)
+# Will display correlations and their p-values
+textMatrix <- paste(signif(moduleTraitCor, 2), "\n(",
+										signif(moduleTraitPvalue, 1), ")", sep = "");
+dim(textMatrix) <- dim(moduleTraitCor)
+par(mar = c(6, 8.5, 3, 3));
+xlabs <- c("Bar expression","Effector expression","Insert_size","Infection with bacteria \n(Plant expressing\neffector)",
+					 "Infection with bacteria \n(Bacteria expressing\neffector)","Infection with oomycete")
+ylabs <- paste("Module ", substring(names(MEs), 3))
+# Display the correlation values within a heatmap plot
+labeledHeatmap(Matrix = moduleTraitCor,
+							 xLabels = xlabs, xLabelsAngle = 0,
+							 cex.lab.x = 0.7, xLabelsAdj = 0.5,
+							 yLabels = ylabs, ySymbols = names(MEs),
+							 colorLabels = FALSE, colors = blueWhiteRed(50),
+							 textMatrix = textMatrix, setStdMargins = FALSE,
+							 cex.text = 0.6, zlim = c(-1,1),
+							 main = paste("Module-trait relationships"))
+```
+Now see the level of membership of each gene to each module. The stronger the membership of a gene to a certain module, the truer is the correlation of that gene to the trait the module correlates to.
+```{r, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+modNames <- substring(names(MEs), 3)
+geneModuleMembership <- as.data.frame(cor(datExpr,MEs, use = "p"));
+MMPvalue <- as.data.frame(corPvalueStudent(as.matrix(geneModuleMembership), nSamples));
+names(geneModuleMembership) <- paste("MM", modNames, sep="");
+names(MMPvalue) <- paste("p.MM", modNames, sep="")
+
+traits <- geneTraitSignificance <- GSPvalue <- list()
+
+for(i in colnames(datTraits)) {
+	traits[[i]] <- as.data.frame(datTraits[,i])
+	names(traits[[i]]) <- i
+	
+	geneTraitSignificance[[i]] <- as.data.frame(cor(datExpr, traits[[i]], use = "p"));
+	GSPvalue[[i]] <- as.data.frame(corPvalueStudent(as.matrix(geneTraitSignificance[[i]]), nSamples));
+	
+	names(geneTraitSignificance[[i]]) <- paste("GS.", names(traits[[i]]), sep="");
+	names(GSPvalue[[i]]) <- paste("p.GS.", names(traits[[i]]), sep="");
+}
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+moduleTraitPvalue <- data.frame(moduleTraitPvalue)
+rownames(moduleTraitPvalue) <- modNames
+
+module <- column <- moduleGenes <- list()
+for (i in modNames) {
+	module[[i]] <- i 
+	column[[i]] <- match(module[[i]], modNames)
+	moduleGenes[[i]] <- moduleColors == module[[i]]
+}
+
+```
+Create a list to separate the genes by module
+```{r, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+Genes_per_module <- list()
+for (i in modNames) {
+	Genes_per_module[[i]] <- names(datExpr)[moduleGenes[[i]]]
+}
+```
+Create a data frame for each module that includes all the information collected
+```{r, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+# Create the starting data frame
+rownames(MEs) <- rownames(metadata)
+oldNames <- geneOrder <- geneInfo <- modOrder <- list()
+GTS <- GSPvalues <- modulesOrder <- data.frame(0)
+
+for(trait in names(traits)) {
+	modOrder[[trait]] <- order(-abs(cor(MEs, traits[[trait]], use = "p")))
+	modulesOrder <- cbind(modulesOrder, modOrder[[trait]])
+	GTS <- cbind(GTS, geneTraitSignificance[[trait]])
+	GSPvalues <- cbind(GSPvalues, GSPvalue[[trait]])
+}
+
+modulesOrder$X0 <- GTS$X0 <- GSPvalues$X0 <- NULL
+names(modulesOrder) <- paste(names(traits), "_Order", sep = "")
+names(GTS) <- paste("GTS_", names(traits), sep = "")
+names(GSPvalues) <- paste("GSPvalue_", names(traits), sep = "")
+rownames(modulesOrder) <- modNames
+
+for (i in modNames) {
+	oldNames[[i]] <- geneOrder[[i]] <- geneInfo[[i]] <- list()
+}
+
+for (i in modNames) {
+	geneInfo[[i]] <- data.frame(
+		cbind(geneSymbol = 
+						Genes_per_module[[i]], moduleColor = i,
+					GTS[Genes_per_module[[i]],],
+					GSPvalues[Genes_per_module[[i]],]))
+	# Order modules by their significance for weight
+	# Add module membership information in the chosen order
+}
+```
+```{r, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+for (i in modNames){
+	oldNames[[i]] <- names(geneInfo[[i]])
+	geneInfo[[i]] <-  
+		data.frame(geneInfo[[i]],
+							 geneModuleMembership[Genes_per_module[[i]], 
+							 										 paste("MM", i, sep = "")], 
+							 MMPvalue[Genes_per_module[[i]],
+							 				 paste("p.MM", i, sep = "")])
+	names(geneInfo[[i]]) <- c(oldNames[[i]], 
+													 paste("MM.", i, sep = ""),
+													 paste("p.MM.", i, sep = ""))
+}
+```
+Save the dataframes
+```{r, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+colors_modules <- unique(moduleColors)
+names(colors_modules) <- unique(moduleLabels)
+dir <- "Gene information per module/"
+dir.create(dir)
+for (i in colors_modules) {
+    write.table(geneInfo[[i]], file = paste0(
+    	dir, "Module_", names(colors_modules[colors_modules == i]), 
+    	"_geneInfo.txt", sep = ""), 
+							quote = F, sep = "\t", row.names = T, col.names = T)
+}
+```
+Perform GO enrichment analysis for each module
+```{r, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+Arabidopsis <- rownames(dat0)
+GOenr <- sapply(names(geneInfo), function(x) {
+	enrichGO(gene = rownames(geneInfo[[x]]), 
+					 universe = Arabidopsis,
+					 OrgDb = org.At.tair.db, 
+					 ont = "BP", keyType = "TAIR",
+					 pAdjustMethod = "BH", 
+					 pvalueCutoff  = 0.01,
+					 qvalueCutoff  = 0.05,
+					 readable      = TRUE)
+})
+```
+
+```{r Save raw GO enrichment result, echo=FALSE, message=FALSE, warning=FALSE}
+
+DIR <- "GO_enrichment/"
+dir.create(DIR)
+for (module in names(geneInfo)) {
+	write.table(GOenr[[module]]@result, 
+							file = paste0(DIR, "Raw_enrichment_WGCNA_", 
+														names(colors_modules[colors_modules == module]), ".txt"), 
+							quote = F, sep = "\t", row.names = T, col.names = T)
+}
+```
+```{r Save significantly enriched GO terms, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+Significant <- list()
+for (module in names(geneInfo)) {
+	Significant[[module]] <- 
+		GOenr[[module]]@result[GOenr[[module]]@result$p.adjust < 0.05,
+													 c("ID", "p.adjust", "Description", "GeneRatio", "BgRatio",
+													 	"pvalue", "qvalue", "geneID", "Count")]
+	write.table(Significant[[module]], 
+							file = paste0(DIR, "Significant_enriched_", 
+														names(colors_modules[colors_modules == module]), ".txt"), 
+							quote = F, sep = "\t", row.names = T, col.names = T)
+}
+```
+```{r, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+# Define numbers of genes and samples
+nGenes <- ncol(datExpr)
+nSamples <- nrow(datExpr)
+# Recalculate MEs with color labels
+MEs0 <- moduleEigengenes(datExpr, moduleColors)$eigengenes
+MEs <- orderMEs(MEs0)
+datTraits <- metadata[ , colnames(metadata) %in% grep("Mlp", colnames(metadata), value = T)]
+moduleTraitCor <- cor(MEs, datTraits, use = "p")
+moduleTraitPvalue <- corPvalueStudent(moduleTraitCor, nSamples)
+```
+```{r fig.height=5, fig.width=10, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+sizeGrWindow(10,6)
+# Will display correlations and their p-values
+textMatrix <- paste(signif(moduleTraitCor, 2), "\n(",
+										signif(moduleTraitPvalue, 1), ")", sep = "");
+dim(textMatrix) <- dim(moduleTraitCor)
+par(mar = c(6, 8.5, 3, 3));
+rownames(moduleTraitCor) <- 
+	paste("Set", names(colors_modules)[
+	match(gsub("ME", "", rownames(moduleTraitCor)), colors_modules)])
+
+ylabs <- rownames(moduleTraitCor)
+# Display the correlation values within a heatmap plot
+pdf("GeneSets-effector_relationships.pdf")
+labeledHeatmap(Matrix = moduleTraitCor,
+							 xLabels = names(datTraits),
+							 xLabelsAngle = 45,
+							 cex.lab.x = 0.8,
+							 xLabelsAdj = 1,
+							 yLabels = ylabs,
+							 ySymbols = names(MEs),
+							 colorLabels = FALSE,
+							 colors = blueWhiteRed(10),
+							 textMatrix = textMatrix,
+							 setStdMargins = FALSE,
+							 cex.text = 0.6,
+							 zlim = c(-1,1),
+							 main = paste("Gene set-CSEP relationships"))
+dev.off()
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+# Define variable weight containing the weight column of datTrait
+modNames <- substring(names(MEs), 3)
+geneModuleMembership <- as.data.frame(cor(datExpr, MEs, use = "p"));
+MMPvalue <- as.data.frame(corPvalueStudent(as.matrix(geneModuleMembership), nSamples));
+names(geneModuleMembership) <- paste("MM", modNames, sep = "");
+names(MMPvalue) <- paste("p.MM", modNames, sep = "");
+traits <- geneTraitSignificance <- GSPvalue <- list()
+
+for (i in colnames(datTraits)) {
+	traits[[i]] <- as.data.frame(datTraits[,i])
+	names(traits[[i]]) <- i
+	
+	geneTraitSignificance[[i]] <- as.data.frame(cor(datExpr, traits[[i]], use = "p"));
+	GSPvalue[[i]] <- as.data.frame(corPvalueStudent(
+		as.matrix(geneTraitSignificance[[i]]), nSamples));
+	
+	names(geneTraitSignificance[[i]]) <- paste("GS.", names(traits[[i]]), sep = "");
+	names(GSPvalue[[i]]) <- paste("p.GS.", names(traits[[i]]), sep = "");
+}
+```
+```{r, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+moduleTraitPvalue <- data.frame(moduleTraitPvalue)
+rownames(moduleTraitPvalue) <- rownames(moduleTraitCor)
+module <- column <- moduleGenes <- list()
+for (i in modNames) {
+  module[[i]] <- i 
+  column[[i]] <- match(module[[i]], modNames)
+  moduleGenes[[i]] <- moduleColors == module[[i]]}
+```
+

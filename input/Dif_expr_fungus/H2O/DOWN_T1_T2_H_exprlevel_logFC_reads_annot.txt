@@ -1,0 +1,1 @@
+Gene_ID	Level	logFC	Size..aa.	Final.Description	X.1st.BLASTp.hit...if.blank..see.next.column.	X.1st.BLASTp.hit...blank.are.real.orphans..	KO.	Name.KEGG	Annotation	X.GO.Terms	GO.Terms	Enzyme.Code	SignalP	H_T1_Rep1	H_T1_Rep2	H_T1_Rep3	H_T1_Rep4	H_T2_Rep1	H_T2_Rep2	H_T2_Rep3	H_T2_Rep4

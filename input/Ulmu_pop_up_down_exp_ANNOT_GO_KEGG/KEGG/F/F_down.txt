@@ -1,0 +1,24 @@
+Protein_ID	ecNum	definition	catalyticActivity	cofactors	associatedDiseases	pathway	pathway_class	pathway_type	subject_id	Gene_ID	explevel_log	logFC	transcript_ID
+205001	1.11.1.7	Peroxidase.	Donor + H(2)O(2) = oxidized donor + 2 H(2)O.	Heme.	Myeloperoxidase deficiency with disseminated candidiasis; MIM:254600.	Flavonoids, stilbene and lignin biosynthesis	Biosynthesis of Secondary Metabolites	METABOLIC	Potri.005G195600.1	WUAT02001898.1	8.295703182	-2.365896425	205001
+205001	1.11.1.7	Peroxidase.	Donor + H(2)O(2) = oxidized donor + 2 H(2)O.	Heme.	Myeloperoxidase deficiency with disseminated candidiasis; MIM:254600.	Methane metabolism	Energy Metabolism	METABOLIC	Potri.005G195600.1	WUAT02001898.1	8.295703182	-2.365896425	205001
+205001	1.11.1.7	Peroxidase.	Donor + H(2)O(2) = oxidized donor + 2 H(2)O.	Heme.	Myeloperoxidase deficiency with disseminated candidiasis; MIM:254600.	Phenylalanine metabolism	Amino Acid Metabolism	METABOLIC	Potri.005G195600.1	WUAT02001898.1	8.295703182	-2.365896425	205001
+268780	3.4.21.-	Serine endopeptidases.	\N	\N	\N	\N	\N	\N	Potri.005G017600.1	WUAT02016563.1	3.99360879	-6.192159914	268780
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Galactose metabolism	Carbohydrate Metabolism	METABOLIC	Potri.010G052500.1	WUAT02021878.1	3.478644579	-4.447607387	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Tetrachloroethene degradation	Biodegradation of Xenobiotics	METABOLIC	Potri.010G052500.1	WUAT02021878.1	3.478644579	-4.447607387	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Fructose and mannose metabolism	Carbohydrate Metabolism	METABOLIC	Potri.010G052500.1	WUAT02021878.1	3.478644579	-4.447607387	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Lysine degradation	Amino Acid Metabolism	METABOLIC	Potri.010G052500.1	WUAT02021878.1	3.478644579	-4.447607387	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Ascorbate and aldarate metabolism	Carbohydrate Metabolism	METABOLIC	Potri.010G052500.1	WUAT02021878.1	3.478644579	-4.447607387	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Butanoate metabolism	Carbohydrate Metabolism	METABOLIC	Potri.010G052500.1	WUAT02021878.1	3.478644579	-4.447607387	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Nucleotide sugars metabolism	Nucleotide Metabolism	METABOLIC	Potri.010G052500.1	WUAT02021878.1	3.478644579	-4.447607387	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Vitamin B6 metabolism	Metabolism of Cofactors and Vitamins	METABOLIC	Potri.010G052500.1	WUAT02021878.1	3.478644579	-4.447607387	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Glycine, serine and threonine metabolism	Amino Acid Metabolism	METABOLIC	Potri.010G052500.1	WUAT02021878.1	3.478644579	-4.447607387	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Glycerolipid metabolism	Metabolism of Complex Lipids	METABOLIC	Potri.010G052500.1	WUAT02021878.1	3.478644579	-4.447607387	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Bile acid biosynthesis	Lipid Metabolism	METABOLIC	Potri.010G052500.1	WUAT02021878.1	3.478644579	-4.447607387	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Benzoate degradation via CoA ligation	Biodegradation of Xenobiotics	METABOLIC	Potri.010G052500.1	WUAT02021878.1	3.478644579	-4.447607387	565949
+569842	3.6.4.4	Plus-end-directed kinesin ATPase.	ATP + H(2)O = ADP + phosphate.	\N	\N	\N	\N	\N	Potri.012G058400.2	WUAT02008057.1	5.818724727	-3.258233752	569842
+720837	3.6.3.1	Magnesium-ATPase.	ATP + H(2)O = ADP + phosphate.	Magnesium.	Progressive familial intrahepatic cholestasis; MIM:211600. Benign recurrent intrahepatic cholestasis; MIM:243300.	\N	\N	\N	Potri.008G111200.1	WUAT02014544.1	1.60393452	-2.27699659	720837
+806207	2.7.7.7	DNA-directed DNA polymerase.	N deoxynucleoside triphosphate = N diphosphate + {DNA}(N).	\N	\N	  DNA polymerase	REPLICATION AND REPAIR	REGULATORY	Potri.012G039300.1	WUAT02016170.1	5.86194567	-3.319655138	806207
+806207	2.7.7.7	DNA-directed DNA polymerase.	N deoxynucleoside triphosphate = N diphosphate + {DNA}(N).	\N	\N	Pyrimidine metabolism	Nucleotide Metabolism	METABOLIC	Potri.012G039300.1	WUAT02016170.1	5.86194567	-3.319655138	806207
+806207	2.7.7.7	DNA-directed DNA polymerase.	N deoxynucleoside triphosphate = N diphosphate + {DNA}(N).	\N	\N	Purine metabolism	Nucleotide Metabolism	METABOLIC	Potri.012G039300.1	WUAT02016170.1	5.86194567	-3.319655138	806207
+822682	3.1.2.15	Ubiquitin thiolesterase.	Ubiquitin C-terminal thiolester + H(2)O = ubiquitin + a thiol.	\N	\N	\N	\N	\N	Potri.010G245100.5	WUAT02005335.1	8.550861383	-2.283947023	822682
+828261	3.6.3.6	Proton-exporting ATPase.	ATP + H(2)O + H(+)(In) = ADP + phosphate + H(+)(Out).	Magnesium.	\N	Oxidative phosphorylation	Energy Metabolism	METABOLIC	Potri.006G275000.1	WUAT02023161.1	1.963238106	-2.098079943	828261

@@ -1,0 +1,14 @@
+pathway_class	Gene.count.x	Gene.count.y
+Amino Acid Metabolism	14	14
+Biodegradation of Xenobiotics	9	15
+Biosynthesis of Secondary Metabolites	2	NA
+Carbohydrate Metabolism	12	26
+Energy Metabolism	2	NA
+Lipid Metabolism	2	6
+Metabolism of Cofactors and Vitamins	2	10
+Metabolism of Complex Carbohydrates	2	NA
+Metabolism of Complex Lipids	6	12
+Metabolism of Other Amino Acids	3	1
+Nucleotide Metabolism	5	9
+Transcription	1	NA
+Replication and Repair	NA	1

@@ -1,0 +1,27 @@
+{
+    "id": "53078648",
+    "path": "F:/PhD/Results_from_sequencing_data-Karen_2016-2020/Results/Results with biomart counts/Results with hisat alignment/DEAwithCommonDegs/WGCNA.Rmd",
+    "project_path": null,
+    "type": "r_markdown",
+    "hash": "2897973439",
+    "contents": "",
+    "dirty": false,
+    "created": 1626879111776.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "chunk_output_type": "inline",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "308,0",
+        "scrollLine": "295"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1626982071,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1626982071784,
+    "read_only": false,
+    "read_only_alternatives": []
+}

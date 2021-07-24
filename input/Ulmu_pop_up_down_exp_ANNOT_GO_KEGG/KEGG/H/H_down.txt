@@ -1,0 +1,5 @@
+Protein_ID	ecNum	definition	catalyticActivity	cofactors	associatedDiseases	pathway	pathway_class	pathway_type	subject_id	Gene_ID	explevel_log	logFC	transcript_ID
+206625	3.4.24.-	Metalloendopeptidases.	\N	\N	\N	\N	\N	\N	Potri.005G249200.1	WUAT02020649.1	4.838041273	-2.002648049	206625
+741584	3.6.3.1	Magnesium-ATPase.	ATP + H(2)O = ADP + phosphate.	Magnesium.	Progressive familial intrahepatic cholestasis; MIM:211600. Benign recurrent intrahepatic cholestasis; MIM:243300.	\N	\N	\N	Potri.017G013500.1	WUAT02015657.1	7.41192921	-2.664313184	741584
+741584	3.6.3.1	Magnesium-ATPase.	ATP + H(2)O = ADP + phosphate.	Magnesium.	Progressive familial intrahepatic cholestasis; MIM:211600. Benign recurrent intrahepatic cholestasis; MIM:243300.	\N	\N	\N	Potri.017G013500.1	WUAT02015657.1	7.41192921	-2.664313184	741584
+761359	2.7.1.37	Protein kinase.	ATP + a protein = ADP + a phosphoprotein.	\N	\N	\N	\N	\N	Potri.005G226700.2	WUAT02017040.1	5.880971161	-2.606963625	761359

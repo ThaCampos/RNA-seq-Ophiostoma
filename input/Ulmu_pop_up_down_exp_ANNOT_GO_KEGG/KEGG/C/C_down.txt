@@ -1,0 +1,106 @@
+Protein_ID	ecNum	definition	catalyticActivity	cofactors	associatedDiseases	pathway	pathway_class	pathway_type	subject_id	Gene_ID	explevel_log	logFC	transcript_ID
+206625	3.4.24.-	Metalloendopeptidases.	\N	\N	\N	\N	\N	\N	Potri.005G249200.1	WUAT02020649.1	4.181432617	-2.777371559	206625
+207165	5.99.1.2	DNA topoisomerase.	ATP-independent breakage of single-stranded DNA, followed by passage and rejoining.	\N	\N	\N	\N	\N	Potri.005G067100.1	WUAT02016846.1	3.513199213	-2.14007026	207165
+560928	3.5.4.6	AMP deaminase.	AMP + H(2)O = IMP + NH(3).	\N	Myopathy due to mad deficiency; MIM:102770.	Purine metabolism	Nucleotide Metabolism	METABOLIC	Potri.006G102000.3	WUAT02013212.1	9.287394715	-3.566514528	560928
+563810	2.7.1.-	Phosphotransferases with an alcohol group as acceptor.	\N	\N	\N	Starch and sucrose metabolism	Metabolism of Complex Carbohydrates	METABOLIC	Potri.008G046500.1	WUAT02000117.1	7.183407577	-2.245329307	563810
+563810	2.7.1.-	Phosphotransferases with an alcohol group as acceptor.	\N	\N	\N	Sphingoglycolipid metabolism	Metabolism of Complex Lipids	METABOLIC	Potri.008G046500.1	WUAT02000117.1	7.183407577	-2.245329307	563810
+563810	2.7.1.-	Phosphotransferases with an alcohol group as acceptor.	\N	\N	\N	Inositol phosphate metabolism	Metabolism of Complex Lipids	METABOLIC	Potri.008G046500.1	WUAT02000117.1	7.183407577	-2.245329307	563810
+563810	2.7.1.-	Phosphotransferases with an alcohol group as acceptor.	\N	\N	\N	Nicotinate and nicotinamide metabolism	Metabolism of Cofactors and Vitamins	METABOLIC	Potri.008G046500.1	WUAT02000117.1	7.183407577	-2.245329307	563810
+563810	2.7.1.-	Phosphotransferases with an alcohol group as acceptor.	\N	\N	\N	Benzoate degradation via CoA ligation	Biodegradation of Xenobiotics	METABOLIC	Potri.008G046500.1	WUAT02000117.1	7.183407577	-2.245329307	563810
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Butanoate metabolism	Carbohydrate Metabolism	METABOLIC	Potri.010G052500.1	WUAT02014161.1	4.184937948	-2.79332553	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Butanoate metabolism	Carbohydrate Metabolism	METABOLIC	Potri.010G052500.1	WUAT02008188.1	3.385843825	-2.167482278	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Butanoate metabolism	Carbohydrate Metabolism	METABOLIC	Potri.010G052500.1	WUAT02009483.1	4.96347262	-2.185575256	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Butanoate metabolism	Carbohydrate Metabolism	METABOLIC	Potri.010G052500.1	WUAT02001723.1	4.779465264	-2.448640133	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Butanoate metabolism	Carbohydrate Metabolism	METABOLIC	Potri.010G052500.1	WUAT02018707.1	6.762050188	-2.355545618	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Butanoate metabolism	Carbohydrate Metabolism	METABOLIC	Potri.010G052500.1	WUAT02017876.1	6.109214735	-2.349092932	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Glycerolipid metabolism	Metabolism of Complex Lipids	METABOLIC	Potri.010G052500.1	WUAT02014161.1	4.184937948	-2.79332553	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Glycerolipid metabolism	Metabolism of Complex Lipids	METABOLIC	Potri.010G052500.1	WUAT02008188.1	3.385843825	-2.167482278	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Glycerolipid metabolism	Metabolism of Complex Lipids	METABOLIC	Potri.010G052500.1	WUAT02009483.1	4.96347262	-2.185575256	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Glycerolipid metabolism	Metabolism of Complex Lipids	METABOLIC	Potri.010G052500.1	WUAT02001723.1	4.779465264	-2.448640133	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Glycerolipid metabolism	Metabolism of Complex Lipids	METABOLIC	Potri.010G052500.1	WUAT02018707.1	6.762050188	-2.355545618	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Glycerolipid metabolism	Metabolism of Complex Lipids	METABOLIC	Potri.010G052500.1	WUAT02017876.1	6.109214735	-2.349092932	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Glycine, serine and threonine metabolism	Amino Acid Metabolism	METABOLIC	Potri.010G052500.1	WUAT02014161.1	4.184937948	-2.79332553	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Glycine, serine and threonine metabolism	Amino Acid Metabolism	METABOLIC	Potri.010G052500.1	WUAT02008188.1	3.385843825	-2.167482278	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Glycine, serine and threonine metabolism	Amino Acid Metabolism	METABOLIC	Potri.010G052500.1	WUAT02009483.1	4.96347262	-2.185575256	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Glycine, serine and threonine metabolism	Amino Acid Metabolism	METABOLIC	Potri.010G052500.1	WUAT02001723.1	4.779465264	-2.448640133	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Glycine, serine and threonine metabolism	Amino Acid Metabolism	METABOLIC	Potri.010G052500.1	WUAT02018707.1	6.762050188	-2.355545618	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Glycine, serine and threonine metabolism	Amino Acid Metabolism	METABOLIC	Potri.010G052500.1	WUAT02017876.1	6.109214735	-2.349092932	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Lysine degradation	Amino Acid Metabolism	METABOLIC	Potri.010G052500.1	WUAT02014161.1	4.184937948	-2.79332553	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Lysine degradation	Amino Acid Metabolism	METABOLIC	Potri.010G052500.1	WUAT02008188.1	3.385843825	-2.167482278	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Lysine degradation	Amino Acid Metabolism	METABOLIC	Potri.010G052500.1	WUAT02009483.1	4.96347262	-2.185575256	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Lysine degradation	Amino Acid Metabolism	METABOLIC	Potri.010G052500.1	WUAT02001723.1	4.779465264	-2.448640133	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Lysine degradation	Amino Acid Metabolism	METABOLIC	Potri.010G052500.1	WUAT02018707.1	6.762050188	-2.355545618	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Lysine degradation	Amino Acid Metabolism	METABOLIC	Potri.010G052500.1	WUAT02017876.1	6.109214735	-2.349092932	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Galactose metabolism	Carbohydrate Metabolism	METABOLIC	Potri.010G052500.1	WUAT02014161.1	4.184937948	-2.79332553	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Galactose metabolism	Carbohydrate Metabolism	METABOLIC	Potri.010G052500.1	WUAT02008188.1	3.385843825	-2.167482278	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Galactose metabolism	Carbohydrate Metabolism	METABOLIC	Potri.010G052500.1	WUAT02009483.1	4.96347262	-2.185575256	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Galactose metabolism	Carbohydrate Metabolism	METABOLIC	Potri.010G052500.1	WUAT02001723.1	4.779465264	-2.448640133	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Galactose metabolism	Carbohydrate Metabolism	METABOLIC	Potri.010G052500.1	WUAT02018707.1	6.762050188	-2.355545618	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Galactose metabolism	Carbohydrate Metabolism	METABOLIC	Potri.010G052500.1	WUAT02017876.1	6.109214735	-2.349092932	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Bile acid biosynthesis	Lipid Metabolism	METABOLIC	Potri.010G052500.1	WUAT02014161.1	4.184937948	-2.79332553	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Bile acid biosynthesis	Lipid Metabolism	METABOLIC	Potri.010G052500.1	WUAT02008188.1	3.385843825	-2.167482278	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Bile acid biosynthesis	Lipid Metabolism	METABOLIC	Potri.010G052500.1	WUAT02009483.1	4.96347262	-2.185575256	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Bile acid biosynthesis	Lipid Metabolism	METABOLIC	Potri.010G052500.1	WUAT02001723.1	4.779465264	-2.448640133	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Bile acid biosynthesis	Lipid Metabolism	METABOLIC	Potri.010G052500.1	WUAT02018707.1	6.762050188	-2.355545618	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Bile acid biosynthesis	Lipid Metabolism	METABOLIC	Potri.010G052500.1	WUAT02017876.1	6.109214735	-2.349092932	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Benzoate degradation via CoA ligation	Biodegradation of Xenobiotics	METABOLIC	Potri.010G052500.1	WUAT02014161.1	4.184937948	-2.79332553	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Benzoate degradation via CoA ligation	Biodegradation of Xenobiotics	METABOLIC	Potri.010G052500.1	WUAT02008188.1	3.385843825	-2.167482278	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Benzoate degradation via CoA ligation	Biodegradation of Xenobiotics	METABOLIC	Potri.010G052500.1	WUAT02009483.1	4.96347262	-2.185575256	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Benzoate degradation via CoA ligation	Biodegradation of Xenobiotics	METABOLIC	Potri.010G052500.1	WUAT02001723.1	4.779465264	-2.448640133	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Benzoate degradation via CoA ligation	Biodegradation of Xenobiotics	METABOLIC	Potri.010G052500.1	WUAT02018707.1	6.762050188	-2.355545618	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Benzoate degradation via CoA ligation	Biodegradation of Xenobiotics	METABOLIC	Potri.010G052500.1	WUAT02017876.1	6.109214735	-2.349092932	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Vitamin B6 metabolism	Metabolism of Cofactors and Vitamins	METABOLIC	Potri.010G052500.1	WUAT02014161.1	4.184937948	-2.79332553	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Vitamin B6 metabolism	Metabolism of Cofactors and Vitamins	METABOLIC	Potri.010G052500.1	WUAT02008188.1	3.385843825	-2.167482278	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Vitamin B6 metabolism	Metabolism of Cofactors and Vitamins	METABOLIC	Potri.010G052500.1	WUAT02009483.1	4.96347262	-2.185575256	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Vitamin B6 metabolism	Metabolism of Cofactors and Vitamins	METABOLIC	Potri.010G052500.1	WUAT02001723.1	4.779465264	-2.448640133	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Vitamin B6 metabolism	Metabolism of Cofactors and Vitamins	METABOLIC	Potri.010G052500.1	WUAT02018707.1	6.762050188	-2.355545618	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Vitamin B6 metabolism	Metabolism of Cofactors and Vitamins	METABOLIC	Potri.010G052500.1	WUAT02017876.1	6.109214735	-2.349092932	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Ascorbate and aldarate metabolism	Carbohydrate Metabolism	METABOLIC	Potri.010G052500.1	WUAT02014161.1	4.184937948	-2.79332553	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Ascorbate and aldarate metabolism	Carbohydrate Metabolism	METABOLIC	Potri.010G052500.1	WUAT02008188.1	3.385843825	-2.167482278	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Ascorbate and aldarate metabolism	Carbohydrate Metabolism	METABOLIC	Potri.010G052500.1	WUAT02009483.1	4.96347262	-2.185575256	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Ascorbate and aldarate metabolism	Carbohydrate Metabolism	METABOLIC	Potri.010G052500.1	WUAT02001723.1	4.779465264	-2.448640133	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Ascorbate and aldarate metabolism	Carbohydrate Metabolism	METABOLIC	Potri.010G052500.1	WUAT02018707.1	6.762050188	-2.355545618	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Ascorbate and aldarate metabolism	Carbohydrate Metabolism	METABOLIC	Potri.010G052500.1	WUAT02017876.1	6.109214735	-2.349092932	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Fructose and mannose metabolism	Carbohydrate Metabolism	METABOLIC	Potri.010G052500.1	WUAT02014161.1	4.184937948	-2.79332553	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Fructose and mannose metabolism	Carbohydrate Metabolism	METABOLIC	Potri.010G052500.1	WUAT02008188.1	3.385843825	-2.167482278	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Fructose and mannose metabolism	Carbohydrate Metabolism	METABOLIC	Potri.010G052500.1	WUAT02009483.1	4.96347262	-2.185575256	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Fructose and mannose metabolism	Carbohydrate Metabolism	METABOLIC	Potri.010G052500.1	WUAT02001723.1	4.779465264	-2.448640133	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Fructose and mannose metabolism	Carbohydrate Metabolism	METABOLIC	Potri.010G052500.1	WUAT02018707.1	6.762050188	-2.355545618	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Fructose and mannose metabolism	Carbohydrate Metabolism	METABOLIC	Potri.010G052500.1	WUAT02017876.1	6.109214735	-2.349092932	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Nucleotide sugars metabolism	Nucleotide Metabolism	METABOLIC	Potri.010G052500.1	WUAT02014161.1	4.184937948	-2.79332553	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Nucleotide sugars metabolism	Nucleotide Metabolism	METABOLIC	Potri.010G052500.1	WUAT02008188.1	3.385843825	-2.167482278	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Nucleotide sugars metabolism	Nucleotide Metabolism	METABOLIC	Potri.010G052500.1	WUAT02009483.1	4.96347262	-2.185575256	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Nucleotide sugars metabolism	Nucleotide Metabolism	METABOLIC	Potri.010G052500.1	WUAT02001723.1	4.779465264	-2.448640133	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Nucleotide sugars metabolism	Nucleotide Metabolism	METABOLIC	Potri.010G052500.1	WUAT02018707.1	6.762050188	-2.355545618	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Nucleotide sugars metabolism	Nucleotide Metabolism	METABOLIC	Potri.010G052500.1	WUAT02017876.1	6.109214735	-2.349092932	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Tetrachloroethene degradation	Biodegradation of Xenobiotics	METABOLIC	Potri.010G052500.1	WUAT02014161.1	4.184937948	-2.79332553	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Tetrachloroethene degradation	Biodegradation of Xenobiotics	METABOLIC	Potri.010G052500.1	WUAT02008188.1	3.385843825	-2.167482278	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Tetrachloroethene degradation	Biodegradation of Xenobiotics	METABOLIC	Potri.010G052500.1	WUAT02009483.1	4.96347262	-2.185575256	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Tetrachloroethene degradation	Biodegradation of Xenobiotics	METABOLIC	Potri.010G052500.1	WUAT02001723.1	4.779465264	-2.448640133	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Tetrachloroethene degradation	Biodegradation of Xenobiotics	METABOLIC	Potri.010G052500.1	WUAT02018707.1	6.762050188	-2.355545618	565949
+565949	1.1.1.-	With NAD(+) or NADP(+) as acceptor.	\N	\N	\N	Tetrachloroethene degradation	Biodegradation of Xenobiotics	METABOLIC	Potri.010G052500.1	WUAT02017876.1	6.109214735	-2.349092932	565949
+569842	3.6.4.4	Plus-end-directed kinesin ATPase.	ATP + H(2)O = ADP + phosphate.	\N	\N	\N	\N	\N	Potri.012G058400.2	WUAT02008057.1	7.244672167	-8.325924802	569842
+658639	1.1.1.2	Alcohol dehydrogenase (NADP+).	An alcohol + NADP(+) = an aldehyde + NADPH.	Zinc.	\N	Pentose and glucuronate interconversions	Carbohydrate Metabolism	METABOLIC	Potri.010G097800.1	WUAT02013075.1	9.433212404	-3.086847297	658639
+658639	1.1.1.2	Alcohol dehydrogenase (NADP+).	An alcohol + NADP(+) = an aldehyde + NADPH.	Zinc.	\N	Glycerolipid metabolism	Metabolism of Complex Lipids	METABOLIC	Potri.010G097800.1	WUAT02013075.1	9.433212404	-3.086847297	658639
+658639	1.1.1.2	Alcohol dehydrogenase (NADP+).	An alcohol + NADP(+) = an aldehyde + NADPH.	Zinc.	\N	Glycolysis / Gluconeogenesis	Carbohydrate Metabolism	METABOLIC	Potri.010G097800.1	WUAT02013075.1	9.433212404	-3.086847297	658639
+658639	1.1.1.2	Alcohol dehydrogenase (NADP+).	An alcohol + NADP(+) = an aldehyde + NADPH.	Zinc.	\N	Caprolactam degradation	Biodegradation of Xenobiotics	METABOLIC	Potri.010G097800.1	WUAT02013075.1	9.433212404	-3.086847297	658639
+720391	2.7.7.27	Glucose-1-phosphate adenylyltransferase.	ATP + alpha-D-glucose 1-phosphate = diphosphate + ADP-glucose.	\N	\N	Starch and sucrose metabolism	Metabolism of Complex Carbohydrates	METABOLIC	Potri.008G195100.1	WUAT02014141.1	4.970101813	-2.232186718	720391
+739535	2.5.1.6	Methionine adenosyltransferase.	ATP + L-methionine + H(2)O = phosphate + diphosphate + S-adenosyl- L-methionine.	\N	Hypermethioninemia due to methionine adenosyltransferase; MIM:250850.	Methionine metabolism	Amino Acid Metabolism	METABOLIC	Potri.006G123200.1	WUAT02010116.1	5.750498413	-2.740034126	739535
+739535	2.5.1.6	Methionine adenosyltransferase.	ATP + L-methionine + H(2)O = phosphate + diphosphate + S-adenosyl- L-methionine.	\N	Hypermethioninemia due to methionine adenosyltransferase; MIM:250850.	Selenoamino acid metabolism	Metabolism of Other Amino Acids	METABOLIC	Potri.006G123200.1	WUAT02010116.1	5.750498413	-2.740034126	739535
+769807	3.2.1.39	Glucan endo-1,3-beta-D-glucosidase.	Hydrolysis of 1,3-beta-D-glucosidic linkages in 1,3-beta-D-glucans.	\N	\N	Starch and sucrose metabolism	Metabolism of Complex Carbohydrates	METABOLIC	Potri.010G142800.1	WUAT02007590.1	9.867925301	-5.121050223	769807
+776276	3.6.1.-	In phosphorous-containing anhydrides.	\N	\N	\N	Folate biosynthesis	Metabolism of Cofactors and Vitamins	METABOLIC	Potri.015G095500.1	WUAT02009446.1	9.496359188	-2.43094047	776276
+776276	3.6.1.-	In phosphorous-containing anhydrides.	\N	\N	\N	Starch and sucrose metabolism	Metabolism of Complex Carbohydrates	METABOLIC	Potri.015G095500.1	WUAT02009446.1	9.496359188	-2.43094047	776276
+797014	2.7.1.137	1-phosphatidylinositol 3-kinase.	ATP + 1-phosphatidyl-1D-myo-inositol = ADP + 1-phosphatidyl-1D-myo- inositol 3-phosphate.	\N	\N	Inositol phosphate metabolism	Metabolism of Complex Lipids	METABOLIC	Potri.001G004800.1	WUAT02009855.1	1.634364514	-2.753637113	797014
+806207	2.7.7.7	DNA-directed DNA polymerase.	N deoxynucleoside triphosphate = N diphosphate + {DNA}(N).	\N	\N	  DNA polymerase	REPLICATION AND REPAIR	REGULATORY	Potri.012G039300.1	WUAT02016170.1	5.17872101	-2.275472215	806207
+806207	2.7.7.7	DNA-directed DNA polymerase.	N deoxynucleoside triphosphate = N diphosphate + {DNA}(N).	\N	\N	Purine metabolism	Nucleotide Metabolism	METABOLIC	Potri.012G039300.1	WUAT02016170.1	5.17872101	-2.275472215	806207
+806207	2.7.7.7	DNA-directed DNA polymerase.	N deoxynucleoside triphosphate = N diphosphate + {DNA}(N).	\N	\N	Pyrimidine metabolism	Nucleotide Metabolism	METABOLIC	Potri.012G039300.1	WUAT02016170.1	5.17872101	-2.275472215	806207
+822885	3.1.3.16	Serine/threonine specific protein phosphatase.	A phosphoprotein + H(2)O = a protein + phosphate.	\N	\N	\N	\N	\N	Potri.011G092200.1	WUAT02021380.1	7.381629542	-2.596196921	822885
+828302	2.4.1.34	1,3-beta-glucan synthase.	UDP-glucose + {(1,3)-beta-D-glucosyl}(N) = UDP + {(1,3)-beta-D- glucosyl}(N+1).	\N	\N	Starch and sucrose metabolism	Metabolism of Complex Carbohydrates	METABOLIC	Potri.001G230000.4	WUAT02000126.1	8.125806147	-2.318894983	828302
+828302	2.4.1.34	1,3-beta-glucan synthase.	UDP-glucose + {(1,3)-beta-D-glucosyl}(N) = UDP + {(1,3)-beta-D- glucosyl}(N+1).	\N	\N	Starch and sucrose metabolism	Metabolism of Complex Carbohydrates	METABOLIC	Potri.001G230000.4	WUAT02013660.1	9.813426088	-2.123168133	828302
+828859	3.4.-.-	Acting on peptide bonds (peptide hydrolases).	\N	\N	\N	Lysine degradation	Amino Acid Metabolism	METABOLIC	Potri.007G015400.2	WUAT02018819.1	4.584281463	-3.253159633	828859
+828859	3.4.-.-	Acting on peptide bonds (peptide hydrolases).	\N	\N	\N	Biotin metabolism	Metabolism of Cofactors and Vitamins	METABOLIC	Potri.007G015400.2	WUAT02018819.1	4.584281463	-3.253159633	828859
+831725	2.7.1.-	Phosphotransferases with an alcohol group as acceptor.	\N	\N	\N	Starch and sucrose metabolism	Metabolism of Complex Carbohydrates	METABOLIC	Potri.005G257500.1	WUAT02007677.1	4.112629128	-3.450928371	831725
+831725	2.7.1.-	Phosphotransferases with an alcohol group as acceptor.	\N	\N	\N	Inositol phosphate metabolism	Metabolism of Complex Lipids	METABOLIC	Potri.005G257500.1	WUAT02007677.1	4.112629128	-3.450928371	831725
+831725	2.7.1.-	Phosphotransferases with an alcohol group as acceptor.	\N	\N	\N	Nicotinate and nicotinamide metabolism	Metabolism of Cofactors and Vitamins	METABOLIC	Potri.005G257500.1	WUAT02007677.1	4.112629128	-3.450928371	831725
+831725	2.7.1.-	Phosphotransferases with an alcohol group as acceptor.	\N	\N	\N	Benzoate degradation via CoA ligation	Biodegradation of Xenobiotics	METABOLIC	Potri.005G257500.1	WUAT02007677.1	4.112629128	-3.450928371	831725
+831725	2.7.1.-	Phosphotransferases with an alcohol group as acceptor.	\N	\N	\N	Sphingoglycolipid metabolism	Metabolism of Complex Lipids	METABOLIC	Potri.005G257500.1	WUAT02007677.1	4.112629128	-3.450928371	831725

@@ -1,0 +1,28 @@
+{
+    "id": "8A101DAA",
+    "path": "D:/postdoc_rprojects/Thais - Ophiostoma_olmos/wgcna.Rmd",
+    "project_path": "wgcna.Rmd",
+    "type": "r_markdown",
+    "hash": "3756231211",
+    "contents": "",
+    "dirty": false,
+    "created": 1626819878408.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "226,37",
+        "scrollLine": "212",
+        "working_dir": "project"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1626982060,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1626982060164,
+    "read_only": false,
+    "read_only_alternatives": []
+}

@@ -1,0 +1,44 @@
+Protein_ID	subject_id	Gene_ID	explevel_log	logFC	transcript_ID	goTermId	goName	gotermType	goAcc
+176347	Potri.001G374200.4	WUAT02012842.1	10.03509668	-2.266152043	176347	2757	nucleus	cellular_component	GO:0005634
+176347	Potri.001G374200.4	WUAT02012842.1	10.03509668	-2.266152043	176347	3449	regulation of transcription, DNA-templated	biological_process	GO:0006355
+176347	Potri.001G374200.4	WUAT02012842.1	10.03509668	-2.266152043	176347	1056	DNA binding	molecular_function	GO:0003677
+268780	Potri.005G017600.1	WUAT02016563.1	3.273500949	-3.513748968	268780	3588	proteolysis	biological_process	GO:0006508
+268780	Potri.005G017600.1	WUAT02016563.1	3.273500949	-3.513748968	268780	1591	obsolete subtilase activity	molecular_function	GO:0004289
+268780	Potri.005G017600.1	WUAT02016563.1	3.273500949	-3.513748968	268780	1573	serine-type endopeptidase activity	molecular_function	GO:0004252
+268780	Potri.005G017600.1	WUAT02016563.1	3.273500949	-3.513748968	268780	2653	ATP binding	molecular_function	GO:0005524
+268780	Potri.005G017600.1	WUAT02016563.1	3.273500949	-3.513748968	268780	8812	nucleoside-triphosphatase activity	molecular_function	GO:0017111
+268780	Potri.005G017600.1	WUAT02016563.1	3.273500949	-3.513748968	268780	5594	obsolete serine-type signal peptidase activity	molecular_function	GO:0008991
+268780	Potri.005G017600.1	WUAT02016563.1	3.273500949	-3.513748968	268780	157	nucleotide binding	molecular_function	GO:0000166
+268780	Potri.005G017600.1	WUAT02016563.1	3.273500949	-3.513748968	268780	1504	ATP-dependent peptidase activity	molecular_function	GO:0004176
+268780	Potri.005G017600.1	WUAT02016563.1	3.273500949	-3.513748968	268780	4786	obsolete pancreatic elastase activity	molecular_function	GO:0008132
+268780	Potri.005G017600.1	WUAT02016563.1	3.273500949	-3.513748968	268780	4889	obsolete plasminogen activator activity	molecular_function	GO:0008243
+268780	Potri.005G017600.1	WUAT02016563.1	3.273500949	-3.513748968	268780	8536	obsolete proprotein convertase activity	molecular_function	GO:0016808
+268780	Potri.005G017600.1	WUAT02016563.1	3.273500949	-3.513748968	268780	3590	obsolete ATP-dependent proteolysis	biological_process	GO:0006510
+553835	Potri.003G073400.2	WUAT02014080.1	10.38979317	-3.355388467	553835	1805	endonuclease activity	molecular_function	GO:0004519
+565949	Potri.010G052500.1	WUAT02012658.1	3.422508288	-3.455564744	565949	9306	5-exo-hydroxycamphor dehydrogenase activity	molecular_function	GO:0018452
+565949	Potri.010G052500.1	WUAT02012658.1	3.422508288	-3.455564744	565949	17232	3-ketoglucose-reductase activity	molecular_function	GO:0048258
+565949	Potri.010G052500.1	WUAT02012658.1	3.422508288	-3.455564744	565949	9307	2-hydroxytetrahydrofuran dehydrogenase activity	molecular_function	GO:0018453
+565949	Potri.010G052500.1	WUAT02012658.1	3.422508288	-3.455564744	565949	9305	epoxide dehydrogenase activity	molecular_function	GO:0018451
+565949	Potri.010G052500.1	WUAT02012658.1	3.422508288	-3.455564744	565949	8354	oxidoreductase activity, acting on the CH-OH group of donors, NAD or NADP as acceptor	molecular_function	GO:0016616
+565949	Potri.010G052500.1	WUAT02012658.1	3.422508288	-3.455564744	565949	1781	mevaldate reductase activity	molecular_function	GO:0004495
+565949	Potri.010G052500.1	WUAT02012658.1	3.422508288	-3.455564744	565949	5482	gluconate dehydrogenase activity	molecular_function	GO:0008875
+565949	Potri.010G052500.1	WUAT02012658.1	3.422508288	-3.455564744	565949	8235	oxidoreductase activity	molecular_function	GO:0016491
+565949	Potri.010G052500.1	WUAT02012658.1	3.422508288	-3.455564744	565949	242	C-3 sterol dehydrogenase (C-4 sterol decarboxylase) activity	molecular_function	GO:0000252
+565949	Potri.010G052500.1	WUAT02012658.1	3.422508288	-3.455564744	565949	243	3-keto sterol reductase activity	molecular_function	GO:0000253
+565949	Potri.010G052500.1	WUAT02012658.1	3.422508288	-3.455564744	565949	4804	metabolic process	biological_process	GO:0008152
+565949	Potri.010G052500.1	WUAT02012658.1	3.422508288	-3.455564744	565949	8021	steroid dehydrogenase activity	molecular_function	GO:0016229
+565949	Potri.010G052500.1	WUAT02012658.1	3.422508288	-3.455564744	565949	1737	isocitrate dehydrogenase activity	molecular_function	GO:0004448
+758112	Potri.003G202300.3	WUAT02011066.1	10.13811403	-2.019883388	758112	1055	nucleic acid binding	molecular_function	GO:0003676
+758112	Potri.003G202300.3	WUAT02011066.1	10.13811403	-2.019883388	758112	3358	DNA metabolic process	biological_process	GO:0006259
+758112	Potri.003G202300.3	WUAT02011066.1	10.13811403	-2.019883388	758112	1804	nuclease activity	molecular_function	GO:0004518
+769807	Potri.010G142800.1	WUAT02007590.1	9.123089129	-4.162663197	769807	3077	carbohydrate metabolic process	biological_process	GO:0005975
+769807	Potri.010G142800.1	WUAT02007590.1	9.123089129	-4.162663197	769807	13528	glucan endo-1,3-beta-D-glucosidase activity	molecular_function	GO:0042973
+769807	Potri.010G142800.1	WUAT02007590.1	9.123089129	-4.162663197	769807	1829	hydrolase activity, hydrolyzing O-glycosyl compounds	molecular_function	GO:0004553
+771224	Potri.011G037000.5	WUAT02004625.1	6.204543878	-2.12573718	771224	1939	protein kinase activity	molecular_function	GO:0004672
+771224	Potri.011G037000.5	WUAT02004625.1	6.204543878	-2.12573718	771224	1941	protein serine/threonine kinase activity	molecular_function	GO:0004674
+771224	Potri.011G037000.5	WUAT02004625.1	6.204543878	-2.12573718	771224	1979	protein tyrosine kinase activity	molecular_function	GO:0004713
+771224	Potri.011G037000.5	WUAT02004625.1	6.204543878	-2.12573718	771224	2653	ATP binding	molecular_function	GO:0005524
+771224	Potri.011G037000.5	WUAT02004625.1	6.204543878	-2.12573718	771224	3551	protein phosphorylation	biological_process	GO:0006468
+771224	Potri.011G037000.5	WUAT02004625.1	6.204543878	-2.12573718	771224	2657	carbohydrate binding	molecular_function	GO:0030246
+803094	Potri.008G013300.1	WUAT02017775.1	4.711738472	-3.037986968	803094	1170	catalytic activity	molecular_function	GO:0003824
+803094	Potri.008G013300.1	WUAT02017775.1	4.711738472	-3.037986968	803094	4804	metabolic process	biological_process	GO:0008152

@@ -1,0 +1,11 @@
+pathway_class	Gene.count.x	Gene.count.y
+Amino Acid Metabolism	6	4
+Biodegradation of Xenobiotics	7	3
+Carbohydrate Metabolism	13	7
+Lipid Metabolism	3	1
+Metabolism of Cofactors and Vitamins	4	1
+Metabolism of Complex Carbohydrates	1	1
+Metabolism of Complex Lipids	5	3
+Nucleotide Metabolism	7	3
+Replication and Repair	2	NA
+Metabolism of Other Amino Acids	NA	2

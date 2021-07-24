@@ -1,0 +1,5 @@
+"0","moduleLabels <- net$colors"
+"0","MEs <- net$MEs;"
+"0","geneTree <- net$dendrograms[[1]];"
+"0","save(MEs, moduleLabels, moduleColors, geneTree, "
+"0","     file = ""effectors_DEGs-networkConstruction-auto.RData"")"

@@ -1,0 +1,3 @@
+pathway_class	Gene.count.x	Gene.count.y
+Metabolism of Complex Carbohydrates	1	NA
+Nucleotide Metabolism	1	NA

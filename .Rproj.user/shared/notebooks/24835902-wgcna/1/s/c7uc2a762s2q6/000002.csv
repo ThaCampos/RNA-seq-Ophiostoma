@@ -1,0 +1,6 @@
+"0","dds <- DESeqDataSetFromMatrix(countData = expression_df[, -c(1, 2)], "
+"0","															colData = design, design = treatment ~ time)"
+"0","dds <- estimateSizeFactors(dds)"
+"0","normalized_counts <- counts(dds, normalized = T)"
+"0","day3 <- grep(""_T1_"", colnames(normalized_counts), value = T)"
+"0","degs_norm <- normalized_counts[degs,day3] %>% t %>% as.data.frame "

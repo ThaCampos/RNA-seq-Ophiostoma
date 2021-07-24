@@ -1,0 +1,103 @@
+Protein_ID	subject_id	Gene_ID	explevel_log	logFC	transcript_ID	goTermId	goName	gotermType	goAcc
+225793	Potri.010G136900.1	WUAT02016110.1	7.086525749	2.574580126	225793	1170	catalytic activity	molecular_function	GO:0003824
+265842	Potri.015G033600.1	WUAT02015182.1	5.333242133	4.238247514	265842	2757	nucleus	cellular_component	GO:0005634
+265842	Potri.015G033600.1	WUAT02015182.1	5.333242133	4.238247514	265842	1056	DNA binding	molecular_function	GO:0003677
+277936	Potri.004G054400.2	WUAT02018124.1	2.872113899	2.264695391	277936	1170	catalytic activity	molecular_function	GO:0003824
+413486	Potri.003G125400.1	WUAT02015395.1	11.10461991	2.264591616	424187	18753	protein polymerization	biological_process	GO:0051258
+413486	Potri.003G125400.1	WUAT02015395.1	11.10461991	2.264591616	424187	4072	microtubule-based movement	biological_process	GO:0007018
+413486	Potri.003G125400.1	WUAT02015395.1	11.10461991	2.264591616	424187	2654	GTP binding	molecular_function	GO:0005525
+413486	Potri.003G125400.1	WUAT02015395.1	11.10461991	2.264591616	424187	1264	GTPase activity	molecular_function	GO:0003924
+413486	Potri.003G125400.1	WUAT02015395.1	11.10461991	2.264591616	424187	2981	microtubule	cellular_component	GO:0005874
+413486	Potri.003G125400.1	WUAT02015395.1	11.10461991	2.264591616	424187	2434	structural molecule activity	molecular_function	GO:0005198
+413486	Potri.003G125400.1	WUAT02015395.1	11.10461991	2.264591616	424187	13790	protein-containing complex	cellular_component	GO:0032991
+420355	Potri.008G177900.3	WUAT02013014.1	0.708932878	2.340175922	431056	5642	urease activity	molecular_function	GO:0009039
+420355	Potri.008G177900.3	WUAT02013014.1	0.708932878	2.340175922	431056	7955	nickel cation binding	molecular_function	GO:0016151
+420355	Potri.008G177900.3	WUAT02013014.1	0.708932878	2.340175922	431056	3876	nitrogen compound metabolic process	biological_process	GO:0006807
+420355	Potri.008G177900.3	WUAT02013014.1	0.708932878	2.340175922	431056	8516	hydrolase activity	molecular_function	GO:0016787
+551637	Potri.002G103800.1	WUAT02007253.1	4.201648198	2.637844115	551637	1894	obsolete secreted phospholipase A2 activity	molecular_function	GO:0004624
+551637	Potri.002G103800.1	WUAT02007253.1	4.201648198	2.637844115	551637	1896	obsolete cytosolic phospholipase A2 activity	molecular_function	GO:0004626
+551637	Potri.002G103800.1	WUAT02007253.1	4.201648198	2.637844115	551637	1893	phospholipase A2 activity	molecular_function	GO:0004623
+551637	Potri.002G103800.1	WUAT02007253.1	4.201648198	2.637844115	551637	10714	protein domain specific binding	molecular_function	GO:0019904
+551637	Potri.002G103800.1	WUAT02007253.1	4.201648198	2.637844115	551637	1895	obsolete calcium-dependent secreted phospholipase A2 activity	molecular_function	GO:0004625
+551637	Potri.002G103800.1	WUAT02007253.1	4.201648198	2.637844115	551637	16491	calcium-independent phospholipase A2 activity	molecular_function	GO:0047499
+551637	Potri.002G103800.1	WUAT02007253.1	4.201648198	2.637844115	551637	1897	obsolete calcium-dependent cytosolic phospholipase A2 activity	molecular_function	GO:0004627
+551637	Potri.002G103800.1	WUAT02007253.1	4.201648198	2.637844115	551637	16490	calcium-dependent phospholipase A2 activity	molecular_function	GO:0047498
+551637	Potri.002G103800.1	WUAT02007253.1	4.201648198	2.637844115	551637	1898	obsolete calcium-independent cytosolic phospholipase A2 activity	molecular_function	GO:0004628
+558645	Potri.005G087100.1	WUAT02013324.1	2.093329033	2.396394074	558645	1598	obsolete proteasome endopeptidase activity	molecular_function	GO:0004299
+558645	Potri.005G087100.1	WUAT02013324.1	2.093329033	2.396394074	558645	1597	threonine-type endopeptidase activity	molecular_function	GO:0004298
+560466	Potri.006G047200.1	WUAT02009413.1	9.116268161	2.247683371	560466	8488	transferase activity, transferring hexosyl groups	molecular_function	GO:0016758
+560466	Potri.006G047200.1	WUAT02009413.1	9.116268161	2.247683371	560466	4804	metabolic process	biological_process	GO:0008152
+562708	Potri.007G081200.1	WUAT02007742.1	6.891414602	2.011201427	562708	9442	methyl tertiary butyl ether 3-monooxygenase activity	molecular_function	GO:0018591
+562708	Potri.007G081200.1	WUAT02007742.1	6.891414602	2.011201427	562708	9436	fluorene oxygenase activity	molecular_function	GO:0018585
+562708	Potri.007G081200.1	WUAT02007742.1	6.891414602	2.011201427	562708	9440	di-n-butyltin dioxygenase activity	molecular_function	GO:0018589
+562708	Potri.007G081200.1	WUAT02007742.1	6.891414602	2.011201427	562708	9441	methylsilanetriol hydroxylase activity	molecular_function	GO:0018590
+562708	Potri.007G081200.1	WUAT02007742.1	6.891414602	2.011201427	562708	9452	4-nitrophenol 2-monooxygenase activity	molecular_function	GO:0018601
+562708	Potri.007G081200.1	WUAT02007742.1	6.891414602	2.011201427	562708	9445	tert-butanol 2-monooxygenase activity	molecular_function	GO:0018594
+562708	Potri.007G081200.1	WUAT02007742.1	6.891414602	2.011201427	562708	8437	oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen	molecular_function	GO:0016705
+562708	Potri.007G081200.1	WUAT02007742.1	6.891414602	2.011201427	562708	3218	obsolete electron transport	biological_process	GO:0006118
+562708	Potri.007G081200.1	WUAT02007742.1	6.891414602	2.011201427	562708	9437	mono-butyltin dioxygenase activity	molecular_function	GO:0018586
+562708	Potri.007G081200.1	WUAT02007742.1	6.891414602	2.011201427	562708	9448	ammonia monooxygenase activity	molecular_function	GO:0018597
+562708	Potri.007G081200.1	WUAT02007742.1	6.891414602	2.011201427	562708	9438	obsolete limonene 8-monooxygenase activity	molecular_function	GO:0018587
+562708	Potri.007G081200.1	WUAT02007742.1	6.891414602	2.011201427	562708	9439	tri-n-butyltin dioxygenase activity	molecular_function	GO:0018588
+562708	Potri.007G081200.1	WUAT02007742.1	6.891414602	2.011201427	562708	9451	alpha-pinene dehydrogenase activity	molecular_function	GO:0018600
+562708	Potri.007G081200.1	WUAT02007742.1	6.891414602	2.011201427	562708	9444	4-chlorophenoxyacetate monooxygenase activity	molecular_function	GO:0018593
+562708	Potri.007G081200.1	WUAT02007742.1	6.891414602	2.011201427	562708	9443	4-nitrocatechol 4-monooxygenase activity	molecular_function	GO:0018592
+562708	Potri.007G081200.1	WUAT02007742.1	6.891414602	2.011201427	562708	9446	alpha-pinene monooxygenase activity	molecular_function	GO:0018595
+562708	Potri.007G081200.1	WUAT02007742.1	6.891414602	2.011201427	562708	9450	2-hydroxyisobutyrate 3-monooxygenase activity	molecular_function	GO:0018599
+562708	Potri.007G081200.1	WUAT02007742.1	6.891414602	2.011201427	562708	9447	dimethylsilanediol hydroxylase activity	molecular_function	GO:0018596
+562708	Potri.007G081200.1	WUAT02007742.1	6.891414602	2.011201427	562708	9449	hydroxymethylsilanetriol oxidase activity	molecular_function	GO:0018598
+562708	Potri.007G081200.1	WUAT02007742.1	6.891414602	2.011201427	562708	1783	monooxygenase activity	molecular_function	GO:0004497
+563247	Potri.007G016100.2	WUAT02007175.1	8.63329774	2.218861737	563247	1170	catalytic activity	molecular_function	GO:0003824
+565949	Potri.010G052500.1	WUAT02021904.1	8.0912283	2.38949398	565949	242	C-3 sterol dehydrogenase (C-4 sterol decarboxylase) activity	molecular_function	GO:0000252
+565949	Potri.010G052500.1	WUAT02021904.1	8.0912283	2.38949398	565949	9306	5-exo-hydroxycamphor dehydrogenase activity	molecular_function	GO:0018452
+565949	Potri.010G052500.1	WUAT02021904.1	8.0912283	2.38949398	565949	5482	gluconate dehydrogenase activity	molecular_function	GO:0008875
+565949	Potri.010G052500.1	WUAT02021904.1	8.0912283	2.38949398	565949	9307	2-hydroxytetrahydrofuran dehydrogenase activity	molecular_function	GO:0018453
+565949	Potri.010G052500.1	WUAT02021904.1	8.0912283	2.38949398	565949	8354	oxidoreductase activity, acting on the CH-OH group of donors, NAD or NADP as acceptor	molecular_function	GO:0016616
+565949	Potri.010G052500.1	WUAT02021904.1	8.0912283	2.38949398	565949	9305	epoxide dehydrogenase activity	molecular_function	GO:0018451
+565949	Potri.010G052500.1	WUAT02021904.1	8.0912283	2.38949398	565949	1737	isocitrate dehydrogenase activity	molecular_function	GO:0004448
+565949	Potri.010G052500.1	WUAT02021904.1	8.0912283	2.38949398	565949	17232	3-ketoglucose-reductase activity	molecular_function	GO:0048258
+565949	Potri.010G052500.1	WUAT02021904.1	8.0912283	2.38949398	565949	1781	mevaldate reductase activity	molecular_function	GO:0004495
+565949	Potri.010G052500.1	WUAT02021904.1	8.0912283	2.38949398	565949	4804	metabolic process	biological_process	GO:0008152
+565949	Potri.010G052500.1	WUAT02021904.1	8.0912283	2.38949398	565949	8021	steroid dehydrogenase activity	molecular_function	GO:0016229
+565949	Potri.010G052500.1	WUAT02021904.1	8.0912283	2.38949398	565949	8235	oxidoreductase activity	molecular_function	GO:0016491
+565949	Potri.010G052500.1	WUAT02021904.1	8.0912283	2.38949398	565949	243	3-keto sterol reductase activity	molecular_function	GO:0000253
+565949	Potri.010G052500.1	WUAT02021878.1	3.227927383	3.654067224	565949	242	C-3 sterol dehydrogenase (C-4 sterol decarboxylase) activity	molecular_function	GO:0000252
+565949	Potri.010G052500.1	WUAT02021878.1	3.227927383	3.654067224	565949	9306	5-exo-hydroxycamphor dehydrogenase activity	molecular_function	GO:0018452
+565949	Potri.010G052500.1	WUAT02021878.1	3.227927383	3.654067224	565949	5482	gluconate dehydrogenase activity	molecular_function	GO:0008875
+565949	Potri.010G052500.1	WUAT02021878.1	3.227927383	3.654067224	565949	9307	2-hydroxytetrahydrofuran dehydrogenase activity	molecular_function	GO:0018453
+565949	Potri.010G052500.1	WUAT02021878.1	3.227927383	3.654067224	565949	8354	oxidoreductase activity, acting on the CH-OH group of donors, NAD or NADP as acceptor	molecular_function	GO:0016616
+565949	Potri.010G052500.1	WUAT02021878.1	3.227927383	3.654067224	565949	9305	epoxide dehydrogenase activity	molecular_function	GO:0018451
+565949	Potri.010G052500.1	WUAT02021878.1	3.227927383	3.654067224	565949	1737	isocitrate dehydrogenase activity	molecular_function	GO:0004448
+565949	Potri.010G052500.1	WUAT02021878.1	3.227927383	3.654067224	565949	17232	3-ketoglucose-reductase activity	molecular_function	GO:0048258
+565949	Potri.010G052500.1	WUAT02021878.1	3.227927383	3.654067224	565949	1781	mevaldate reductase activity	molecular_function	GO:0004495
+565949	Potri.010G052500.1	WUAT02021878.1	3.227927383	3.654067224	565949	4804	metabolic process	biological_process	GO:0008152
+565949	Potri.010G052500.1	WUAT02021878.1	3.227927383	3.654067224	565949	8021	steroid dehydrogenase activity	molecular_function	GO:0016229
+565949	Potri.010G052500.1	WUAT02021878.1	3.227927383	3.654067224	565949	8235	oxidoreductase activity	molecular_function	GO:0016491
+565949	Potri.010G052500.1	WUAT02021878.1	3.227927383	3.654067224	565949	243	3-keto sterol reductase activity	molecular_function	GO:0000253
+649249	Potri.009G132100.1	WUAT02022099.1	8.706336223	2.093882449	649249	3929	amino acid transport	biological_process	GO:0006865
+649249	Potri.009G132100.1	WUAT02022099.1	8.706336223	2.093882449	649249	7826	membrane	cellular_component	GO:0016020
+649249	Potri.009G132100.1	WUAT02022099.1	8.706336223	2.093882449	649249	2494	amine transmembrane transporter activity	molecular_function	GO:0005275
+655357	Potri.007G020100.1	WUAT02001610.1	0.988858195	2.672725554	655357	2653	ATP binding	molecular_function	GO:0005524
+655357	Potri.007G020100.1	WUAT02001610.1	0.988858195	2.672725554	655357	3059	protein kinase CK2 complex	cellular_component	GO:0005956
+655357	Potri.007G020100.1	WUAT02001610.1	0.988858195	2.672725554	655357	5223	cAMP-dependent protein kinase regulator activity	molecular_function	GO:0008603
+655357	Potri.007G020100.1	WUAT02001610.1	0.988858195	2.672725554	655357	3055	cAMP-dependent protein kinase complex	cellular_component	GO:0005952
+655357	Potri.007G020100.1	WUAT02001610.1	0.988858195	2.672725554	655357	5224	obsolete protein kinase CK2 regulator activity	molecular_function	GO:0008605
+655357	Potri.007G020100.1	WUAT02001610.1	0.988858195	2.672725554	655357	3551	protein phosphorylation	biological_process	GO:0006468
+655357	Potri.007G020100.1	WUAT02001610.1	0.988858195	2.672725554	655357	1979	protein tyrosine kinase activity	molecular_function	GO:0004713
+655357	Potri.007G020100.1	WUAT02001610.1	0.988858195	2.672725554	655357	1939	protein kinase activity	molecular_function	GO:0004672
+655357	Potri.007G020100.1	WUAT02001610.1	0.988858195	2.672725554	655357	1941	protein serine/threonine kinase activity	molecular_function	GO:0004674
+655357	Potri.007G020100.1	WUAT02001610.1	0.988858195	2.672725554	655357	1948	obsolete protein kinase CK2 activity	molecular_function	GO:0004682
+655357	Potri.007G020100.1	WUAT02001610.1	0.988858195	2.672725554	655357	1957	cAMP-dependent protein kinase activity	molecular_function	GO:0004691
+759085	Potri.004G086100.1	WUAT02002755.1	10.77237308	2.170092369	759085	1939	protein kinase activity	molecular_function	GO:0004672
+759085	Potri.004G086100.1	WUAT02002755.1	10.77237308	2.170092369	759085	2653	ATP binding	molecular_function	GO:0005524
+759085	Potri.004G086100.1	WUAT02002755.1	10.77237308	2.170092369	759085	1941	protein serine/threonine kinase activity	molecular_function	GO:0004674
+759085	Potri.004G086100.1	WUAT02002755.1	10.77237308	2.170092369	759085	1979	protein tyrosine kinase activity	molecular_function	GO:0004713
+759085	Potri.004G086100.1	WUAT02002755.1	10.77237308	2.170092369	759085	3551	protein phosphorylation	biological_process	GO:0006468
+773254	Potri.012G105500.1	WUAT02001530.1	5.537635627	2.238342986	773254	1515	obsolete carboxypeptidase D activity	molecular_function	GO:0004187
+773254	Potri.012G105500.1	WUAT02001530.1	5.537635627	2.238342986	773254	1513	serine-type carboxypeptidase activity	molecular_function	GO:0004185
+773254	Potri.012G105500.1	WUAT02001530.1	5.537635627	2.238342986	773254	3588	proteolysis	biological_process	GO:0006508
+773254	Potri.012G105500.1	WUAT02001530.1	5.537635627	2.238342986	773254	1170	catalytic activity	molecular_function	GO:0003824
+832849	Potri.008G174500.1	WUAT02015713.1	6.907665571	2.173133377	832849	8204	myosin complex	cellular_component	GO:0016459
+832849	Potri.008G174500.1	WUAT02015713.1	6.907665571	2.173133377	832849	1121	motor activity	molecular_function	GO:0003774
+832849	Potri.008G174500.1	WUAT02015713.1	6.907665571	2.173133377	832849	1648	glutamate decarboxylase activity	molecular_function	GO:0004351
+832849	Potri.008G174500.1	WUAT02015713.1	6.907665571	2.173133377	832849	2653	ATP binding	molecular_function	GO:0005524

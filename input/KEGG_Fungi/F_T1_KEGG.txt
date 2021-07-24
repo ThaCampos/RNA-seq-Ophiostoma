@@ -1,0 +1,22 @@
+Gene_ID	Level	logFC	protein_ID	ecNum	definition	catalyticActivity	cofactors	associatedDiseases	pathway	pathway_class	pathway_type	transcript_ID
+gene_1913	4.85432771192107	2.09883074917639	1980486	2.4.2.7	Adenine phosphoribosyltransferase.	AMP + diphosphate = adenine + 5-phospho-alpha-D-ribose 1-diphosphate.	\N	Urolithiasis, 2,8-dihydroxyadenine; MIM:102600.	Purine metabolism	Nucleotide Metabolism	METABOLIC	1980740
+gene_1922	5.87035990331488	2.95612983941045	1980495	3.4.25.1	Proteasome endopeptidase complex.	Cleavage at peptide bonds with very broad specificity.	\N	\N	\N	\N	\N	1980749
+gene_2266	2.56144987867873	2.18470538573766	1980836	1.6.2.2	Cytochrome-b5 reductase.	NADH + 2 ferricytochrome b5 = NAD(+) + 2 ferrocytochrome b5.	FAD.	Methemoglobinemia enzymopathic forms I, II, III; MIM:250800.	\N	\N	\N	1981090
+gene_4590	4.454253379654	2.25298548977418	1983170	1.14.11.13	Gibberellin 2-beta-dioxygenase.	Gibberellin 1 + 2-oxoglutarate + O(2) = 2-beta-hydroxygibberellin 1 + succinate + CO(2).	\N	\N	\N	\N	\N	1983424
+gene_5052	4.04792716044406	3.18520914822584	1983631	5.99.1.3	DNA topoisomerase (ATP-hydrolysing).	ATP-dependent breakage, passage and rejoining of double-stranded DNA.	\N	Ataxia-telangiectasia; MIM:208900.	\N	\N	\N	1983885
+gene_5348	2.3102588323962	2.49070301265886	1983924	2.4.1.-	Hexosyltransferases.	\N	\N	\N	Globoside metabolism	Metabolism of Complex Lipids	METABOLIC	1984178
+gene_5348	2.3102588323962	2.49070301265886	1983924	2.4.1.-	Hexosyltransferases.	\N	\N	\N	Blood group glycolipid biosynthesis - lact series	Metabolism of Complex Lipids	METABOLIC	1984178
+gene_5348	2.3102588323962	2.49070301265886	1983924	2.4.1.-	Hexosyltransferases.	\N	\N	\N	Keratan sulfate biosynthesis	Metabolism of Complex Carbohydrates	METABOLIC	1984178
+gene_5348	2.3102588323962	2.49070301265886	1983924	2.4.1.-	Hexosyltransferases.	\N	\N	\N	Peptidoglycan biosynthesis	Metabolism of Complex Carbohydrates	METABOLIC	1984178
+gene_5348	2.3102588323962	2.49070301265886	1983924	2.4.1.-	Hexosyltransferases.	\N	\N	\N	Chondroitin / heparan sulfate biosynthesis	Metabolism of Complex Carbohydrates	METABOLIC	1984178
+gene_5348	2.3102588323962	2.49070301265886	1983924	2.4.1.-	Hexosyltransferases.	\N	\N	\N	O-Glycans biosynthesis	Metabolism of Complex Carbohydrates	METABOLIC	1984178
+gene_5348	2.3102588323962	2.49070301265886	1983924	2.4.1.-	Hexosyltransferases.	\N	\N	\N	Blood group glycolipid biosynthesis - neolact series	Metabolism of Complex Lipids	METABOLIC	1984178
+gene_5348	2.3102588323962	2.49070301265886	1983924	2.4.1.-	Hexosyltransferases.	\N	\N	\N	Glycerolipid metabolism	Metabolism of Complex Lipids	METABOLIC	1984178
+gene_5348	2.3102588323962	2.49070301265886	1983924	2.4.1.-	Hexosyltransferases.	\N	\N	\N	Sphingoglycolipid metabolism	Metabolism of Complex Lipids	METABOLIC	1984178
+gene_5348	2.3102588323962	2.49070301265886	1983924	2.4.1.-	Hexosyltransferases.	\N	\N	\N	N-Glycans biosynthesis	Metabolism of Complex Carbohydrates	METABOLIC	1984178
+gene_5348	2.3102588323962	2.49070301265886	1983924	2.4.1.-	Hexosyltransferases.	\N	\N	\N	Fructose and mannose metabolism	Carbohydrate Metabolism	METABOLIC	1984178
+gene_546	2.29189536567052	2.48124487340395	1979108	3.5.4.5	Cytidine deaminase.	Cytidine + H(2)O = uridine + NH(3).	\N	\N	Pyrimidine metabolism	Nucleotide Metabolism	METABOLIC	1979362
+gene_6080	6.70887866309894	2.00938279905969	1984664	3.4.-.-	Acting on peptide bonds (peptide hydrolases).	\N	\N	\N	Biotin metabolism	Metabolism of Cofactors and Vitamins	METABOLIC	1984918
+gene_6080	6.70887866309894	2.00938279905969	1984664	3.4.-.-	Acting on peptide bonds (peptide hydrolases).	\N	\N	\N	Lysine degradation	Amino Acid Metabolism	METABOLIC	1984918
+gene_6142	7.14421102946175	2.24837178989091	1984726	1.1.1.34	Hydroxymethylglutaryl-CoA reductase (NADPH).	(R)-mevalonate + CoA + 2 NADP(+) = (S)-3-hydroxy-3-methylglutaryl-CoA + 2 NADPH.	\N	\N	Sterol biosynthesis	Lipid Metabolism	METABOLIC	1984980
+gene_6555	7.43848858966783	2.16978439736988	1985145	3.2.2.-	Hydrolyzing N-glycosyl compounds.	\N	\N	\N	\N	\N	\N	1985399

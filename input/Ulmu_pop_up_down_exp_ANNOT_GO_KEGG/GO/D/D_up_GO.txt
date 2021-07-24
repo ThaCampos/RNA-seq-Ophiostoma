@@ -1,0 +1,51 @@
+Protein_ID	subject_id	Gene_ID	explevel_log	logFC	transcript_ID	goTermId	goName	gotermType	goAcc
+558645	Potri.005G087100.1	WUAT02013324.1	1.500980419	2.672884918	558645	1597	threonine-type endopeptidase activity	molecular_function	GO:0004298
+558645	Potri.005G087100.1	WUAT02013324.1	1.500980419	2.672884918	558645	1598	obsolete proteasome endopeptidase activity	molecular_function	GO:0004299
+559591	Potri.005G213300.6	WUAT02002844.1	2.052142033	2.076148834	559591	4804	metabolic process	biological_process	GO:0008152
+559591	Potri.005G213300.6	WUAT02002844.1	2.052142033	2.076148834	559591	1771	methylcrotonoyl-CoA carboxylase activity	molecular_function	GO:0004485
+559591	Potri.005G213300.6	WUAT02002844.1	2.052142033	2.076148834	559591	2653	ATP binding	molecular_function	GO:0005524
+559591	Potri.005G213300.6	WUAT02002844.1	2.052142033	2.076148834	559591	8601	ligase activity	molecular_function	GO:0016874
+559591	Potri.005G213300.6	WUAT02002844.1	2.052142033	2.076148834	559591	5966	biotin binding	molecular_function	GO:0009374
+565949	Potri.010G052500.1	WUAT02018674.1	7.254142141	2.276582281	565949	9305	epoxide dehydrogenase activity	molecular_function	GO:0018451
+565949	Potri.010G052500.1	WUAT02018674.1	7.254142141	2.276582281	565949	9306	5-exo-hydroxycamphor dehydrogenase activity	molecular_function	GO:0018452
+565949	Potri.010G052500.1	WUAT02018674.1	7.254142141	2.276582281	565949	8354	oxidoreductase activity, acting on the CH-OH group of donors, NAD or NADP as acceptor	molecular_function	GO:0016616
+565949	Potri.010G052500.1	WUAT02018674.1	7.254142141	2.276582281	565949	1781	mevaldate reductase activity	molecular_function	GO:0004495
+565949	Potri.010G052500.1	WUAT02018674.1	7.254142141	2.276582281	565949	4804	metabolic process	biological_process	GO:0008152
+565949	Potri.010G052500.1	WUAT02018674.1	7.254142141	2.276582281	565949	9307	2-hydroxytetrahydrofuran dehydrogenase activity	molecular_function	GO:0018453
+565949	Potri.010G052500.1	WUAT02018674.1	7.254142141	2.276582281	565949	8021	steroid dehydrogenase activity	molecular_function	GO:0016229
+565949	Potri.010G052500.1	WUAT02018674.1	7.254142141	2.276582281	565949	8235	oxidoreductase activity	molecular_function	GO:0016491
+565949	Potri.010G052500.1	WUAT02018674.1	7.254142141	2.276582281	565949	17232	3-ketoglucose-reductase activity	molecular_function	GO:0048258
+565949	Potri.010G052500.1	WUAT02018674.1	7.254142141	2.276582281	565949	5482	gluconate dehydrogenase activity	molecular_function	GO:0008875
+565949	Potri.010G052500.1	WUAT02018674.1	7.254142141	2.276582281	565949	242	C-3 sterol dehydrogenase (C-4 sterol decarboxylase) activity	molecular_function	GO:0000252
+565949	Potri.010G052500.1	WUAT02018674.1	7.254142141	2.276582281	565949	243	3-keto sterol reductase activity	molecular_function	GO:0000253
+565949	Potri.010G052500.1	WUAT02018674.1	7.254142141	2.276582281	565949	1737	isocitrate dehydrogenase activity	molecular_function	GO:0004448
+565949	Potri.010G052500.1	WUAT02001524.1	3.200160998	2.420559482	565949	9305	epoxide dehydrogenase activity	molecular_function	GO:0018451
+565949	Potri.010G052500.1	WUAT02001524.1	3.200160998	2.420559482	565949	9306	5-exo-hydroxycamphor dehydrogenase activity	molecular_function	GO:0018452
+565949	Potri.010G052500.1	WUAT02001524.1	3.200160998	2.420559482	565949	8354	oxidoreductase activity, acting on the CH-OH group of donors, NAD or NADP as acceptor	molecular_function	GO:0016616
+565949	Potri.010G052500.1	WUAT02001524.1	3.200160998	2.420559482	565949	1781	mevaldate reductase activity	molecular_function	GO:0004495
+565949	Potri.010G052500.1	WUAT02001524.1	3.200160998	2.420559482	565949	4804	metabolic process	biological_process	GO:0008152
+565949	Potri.010G052500.1	WUAT02001524.1	3.200160998	2.420559482	565949	9307	2-hydroxytetrahydrofuran dehydrogenase activity	molecular_function	GO:0018453
+565949	Potri.010G052500.1	WUAT02001524.1	3.200160998	2.420559482	565949	8021	steroid dehydrogenase activity	molecular_function	GO:0016229
+565949	Potri.010G052500.1	WUAT02001524.1	3.200160998	2.420559482	565949	8235	oxidoreductase activity	molecular_function	GO:0016491
+565949	Potri.010G052500.1	WUAT02001524.1	3.200160998	2.420559482	565949	17232	3-ketoglucose-reductase activity	molecular_function	GO:0048258
+565949	Potri.010G052500.1	WUAT02001524.1	3.200160998	2.420559482	565949	5482	gluconate dehydrogenase activity	molecular_function	GO:0008875
+565949	Potri.010G052500.1	WUAT02001524.1	3.200160998	2.420559482	565949	242	C-3 sterol dehydrogenase (C-4 sterol decarboxylase) activity	molecular_function	GO:0000252
+565949	Potri.010G052500.1	WUAT02001524.1	3.200160998	2.420559482	565949	243	3-keto sterol reductase activity	molecular_function	GO:0000253
+565949	Potri.010G052500.1	WUAT02001524.1	3.200160998	2.420559482	565949	1737	isocitrate dehydrogenase activity	molecular_function	GO:0004448
+565949	Potri.010G052500.1	WUAT02012658.1	2.292092485	2.241255346	565949	9305	epoxide dehydrogenase activity	molecular_function	GO:0018451
+565949	Potri.010G052500.1	WUAT02012658.1	2.292092485	2.241255346	565949	9306	5-exo-hydroxycamphor dehydrogenase activity	molecular_function	GO:0018452
+565949	Potri.010G052500.1	WUAT02012658.1	2.292092485	2.241255346	565949	8354	oxidoreductase activity, acting on the CH-OH group of donors, NAD or NADP as acceptor	molecular_function	GO:0016616
+565949	Potri.010G052500.1	WUAT02012658.1	2.292092485	2.241255346	565949	1781	mevaldate reductase activity	molecular_function	GO:0004495
+565949	Potri.010G052500.1	WUAT02012658.1	2.292092485	2.241255346	565949	4804	metabolic process	biological_process	GO:0008152
+565949	Potri.010G052500.1	WUAT02012658.1	2.292092485	2.241255346	565949	9307	2-hydroxytetrahydrofuran dehydrogenase activity	molecular_function	GO:0018453
+565949	Potri.010G052500.1	WUAT02012658.1	2.292092485	2.241255346	565949	8021	steroid dehydrogenase activity	molecular_function	GO:0016229
+565949	Potri.010G052500.1	WUAT02012658.1	2.292092485	2.241255346	565949	8235	oxidoreductase activity	molecular_function	GO:0016491
+565949	Potri.010G052500.1	WUAT02012658.1	2.292092485	2.241255346	565949	17232	3-ketoglucose-reductase activity	molecular_function	GO:0048258
+565949	Potri.010G052500.1	WUAT02012658.1	2.292092485	2.241255346	565949	5482	gluconate dehydrogenase activity	molecular_function	GO:0008875
+565949	Potri.010G052500.1	WUAT02012658.1	2.292092485	2.241255346	565949	242	C-3 sterol dehydrogenase (C-4 sterol decarboxylase) activity	molecular_function	GO:0000252
+565949	Potri.010G052500.1	WUAT02012658.1	2.292092485	2.241255346	565949	243	3-keto sterol reductase activity	molecular_function	GO:0000253
+565949	Potri.010G052500.1	WUAT02012658.1	2.292092485	2.241255346	565949	1737	isocitrate dehydrogenase activity	molecular_function	GO:0004448
+773254	Potri.012G105500.1	WUAT02001530.1	5.632703212	2.473883858	773254	1513	serine-type carboxypeptidase activity	molecular_function	GO:0004185
+773254	Potri.012G105500.1	WUAT02001530.1	5.632703212	2.473883858	773254	1515	obsolete carboxypeptidase D activity	molecular_function	GO:0004187
+773254	Potri.012G105500.1	WUAT02001530.1	5.632703212	2.473883858	773254	3588	proteolysis	biological_process	GO:0006508
+773254	Potri.012G105500.1	WUAT02001530.1	5.632703212	2.473883858	773254	1170	catalytic activity	molecular_function	GO:0003824

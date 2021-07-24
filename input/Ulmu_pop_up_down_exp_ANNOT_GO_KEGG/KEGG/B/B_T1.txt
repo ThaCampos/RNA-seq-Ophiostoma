@@ -1,0 +1,11 @@
+Gene count	pathway_class
+11	Carbohydrate Metabolism
+9	Amino Acid Metabolism
+6	Biodegradation of Xenobiotics
+4	Biosynthesis of Secondary Metabolites
+2	Lipid Metabolism
+2	Metabolism of Cofactors and Vitamins
+2	Metabolism of Complex Lipids
+2	Metabolism of Other Amino Acids
+2	Nucleotide Metabolism
+1	Energy Metabolism

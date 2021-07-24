@@ -1,0 +1,229 @@
+---
+title: "Untitled"
+output: html_document
+---
+
+```{r  Load libraries, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+rm(list = ls())
+repos <- c("https://cran.rstudio.com/",
+           "https://bioconductor.org/packages/3.11/bioc")
+
+packages_to_use = c("S4Vectors", "colorspace", "stringi", "locfit",
+										"dbplyr", "WGCNA", "clusterProfiler",
+										"tidyverse", "KEGGprofile", "DESeq2")
+
+for (i in packages_to_use) { 
+  if (i %in% rownames(installed.packages())) {
+    library(i, character.only = T)
+  } else { 
+  	BiocManager::install(i)
+    install.packages(i, dependencies = T)
+    library(i, character.only = T)
+  }
+}
+```
+
+```{r Load files, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+acronyms = c("O. ulmi Q412T-O",
+						 "O. nouvelle-subsp. novo-ulmi H327-O",
+						 "O. novo-ulmi subsp. Lien américain 1 DDS100",
+						 "O. novo-ulmi subsp. Lignée américaine 2 DDS 154",
+						 "O. himal-ulmi HP30",
+						 "O. quercus AU5-1",
+						 "O. novo-ulmi subsp. mutant novo-ulmi delta Ogf1 13-15",
+						 "H2O")
+names(acronyms) <- LETTERS[1:8]
+
+input_dir = paste0("input/Ulmu_pop_up_down_exp_ANNOT_GO_KEGG/")
+files = sapply(LETTERS[1:8], function(x){
+	paste0(input_dir, x, "/", x, "_", c("down", "up"), 
+				 "_merge_NASTA_PROT_ID_sort.txt")
+}) %>% as.data.frame()
+
+down_regulated <- lapply(LETTERS[1:8], function(x){
+	read.delim(files[1, x])
+})
+
+up_regulated <- lapply(LETTERS[1:8], function(x){
+	read.delim(files[2, x])
+})
+
+names(down_regulated) <- names(up_regulated) <- LETTERS[1:8]
+
+degs = c()
+
+for (i in LETTERS[1:8]) {
+	degs = c(degs, down_regulated[[i]]$Gene_ID, up_regulated[[i]]$Gene_ID) %>%
+		unique
+}
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+expression = lapply(LETTERS[1:8], function(x){
+	read.delim(paste0(input_dir, x, "/", x, "_pop_bom_nome_matrix.txt"))
+}) 
+names(expression) <- LETTERS[1:8]
+
+rm(expression_df)
+for (i in LETTERS[1:8]) {
+	if (!exists("expression_df")) {
+		expression_df = expression[[i]]
+		rownames(expression_df) <- expression_df[, "Gene_ID"]
+	} else {
+		expression_df <- merge(expression_df, 
+													 expression[[i]],
+													 by = c("Gene_ID", "subject_id")
+		)
+	}
+} 
+
+rownames(expression_df) <- expression_df$Gene_ID
+design <- data.frame(design = names(expression_df)[3:ncol(expression_df)]) %>%
+	separate(col = design, sep = "_", 
+					 into = c("treatment", "time", "replicate"))
+design$treatment <- factor(design$treatment, levels = c("H", LETTERS[1:7]))
+design$time <- factor(design$time, levels = c("T1", "T2"))
+	
+```
+```{r}
+dds <- DESeqDataSetFromMatrix(countData = expression_df[, -c(1, 2)], 
+															colData = design, design = treatment ~ time)
+dds <- estimateSizeFactors(dds)
+normalized_counts <- counts(dds, normalized = T)
+day3 <- grep("_T1_", colnames(normalized_counts), value = T)
+degs_norm <- normalized_counts[degs,day3] %>% t %>% as.data.frame 
+```
+```{r}
+options(stringsAsFactors = FALSE)
+```
+
+Choose the soft threshold
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+# Choose a set of soft-thresholding powers
+powers <- c(c(1:10), seq(from = 12, to = 20, by = 2))
+# Call the network topology analysis function
+sft <- pickSoftThreshold(degs_norm, powerVector = powers, verbose = 5)
+# Plot the results:
+sizeGrWindow(9, 5)
+par(mfrow = c(1,2));
+cex1 <- 0.9;
+# Scale-free topology fit index as a function of the soft-thresholding power
+plot(sft$fitIndices[, 1], -sign(sft$fitIndices[, 3]) * sft$fitIndices[, 2],
+		 xlab = "Soft Threshold (power)", 
+		 ylab = "Scale Free Topology Model Fit,signed R^2", type = "n",
+		 main = paste("Scale independence"))
+text(sft$fitIndices[, 1], -sign(sft$fitIndices[, 3]) * sft$fitIndices[, 2],
+		 labels = powers, cex = cex1, col = "red");
+# this line corresponds to using an R^2 cut-off of h
+abline(h = 0.90,col = "red")
+# Mean connectivity as a function of the soft-thresholding power
+plot(sft$fitIndices[, 1], sft$fitIndices[, 5],
+		 xlab = "Soft Threshold (power)",
+		 ylab = "Mean Connectivity", type = "n",
+		 main = paste("Mean connectivity"))
+text(sft$fitIndices[, 1], sft$fitIndices[, 5], 
+		 labels = powers, cex = cex1, col = "red")
+```
+Confirm all the columns of degs_norm are numeric vectors and create the modules.
+Here we take fost threshold with a model fit R^2 of at least 0.9 with highest mean connectivity.
+We don't want small modules, so here we choose minimum size of 30.
+We want similar modules to be merged, so if modules have similarity higher than 70%, they will be merged.
+```{r, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+for (i in 1:nrow(sft$fitIndices)) {
+	if (-sign(sft$fitIndices[i, 3]) * sft$fitIndices[i, 2] > 0.85) {
+		power_ = sft$fitIndices$Power[i]
+		break
+	} else {
+		next
+	}
+}
+
+for(i in 1:ncol(degs_norm)){
+	degs_norm[,i] <- as.numeric(degs_norm[,i])
+}
+cor <- WGCNA::cor
+net <- blockwiseModules(degs_norm, power = power_,
+												TOMType = "unsigned",
+												numericLabels = TRUE, verbose = 3)
+```
+
+Now we plot the dendrogram of genes with the modules
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+# open a graphics window
+sizeGrWindow(12, 9)
+# Convert labels to colors for plotting
+moduleColors<- labels2colors(net$colors)
+# Plot the dendrogram and the module colors underneath
+plotDendroAndColors(net$dendrograms[[1]], moduleColors[net$blockGenes[[1]]],
+										"Module colors",
+										dendroLabels = FALSE, hang = 0.03,
+										addGuide = F)
+```
+
+Save the raw results
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+moduleLabels <- net$colors
+MEs <- net$MEs;
+geneTree <- net$dendrograms[[1]];
+save(MEs, moduleLabels, moduleColors, geneTree, 
+     file = "effectors_DEGs-networkConstruction-auto.RData")
+```
+Now calculate the eigengenes and plot the distance tree for the modules
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+#blockwise function already merges, so no need to calculate it separetely
+# Calculate eigengenes
+MEList <- moduleEigengenes(degs_norm, colors = moduleColors)
+MEs <- MEList$eigengenes
+# Calculate dissimilarity of module eigengenes
+MEDiss <- 1 - cor(MEs);
+# Cluster module eigengenes
+METree <- hclust(as.dist(MEDiss), method = "average");
+# Plot the result
+sizeGrWindow(7, 6)
+plot(METree, main = "Clustering of module eigengenes",
+     xlab = "", sub = "")
+```
+```{r}
+rm(heatmap_df)
+for (i in LETTERS[1:8]) {
+	if (!exists("heatmap_df")) {
+		heatmap_df = data.frame(rbind(up_regulated[[i]][, c(1, 2, 4)], 
+																	down_regulated[[i]][, c(1, 2, 4)])) %>%
+			unique()
+		rownames(heatmap_df) <- heatmap_df[, "Gene_ID"]
+		colnames(heatmap_df)[3] <- i
+	} else {
+		tmp <- data.frame(rbind(up_regulated[[i]][, c(1, 2, 4)], 
+														down_regulated[[i]][, c(1, 2, 4)]))  %>%
+			unique()
+		rownames(tmp) <- tmp[, "Gene_ID"]
+		colnames(tmp)[3] <- i
+		heatmap_df <- merge(heatmap_df, tmp,
+												by = c("Gene_ID", "subject_id"), all = T
+		)
+	}
+} 
+
+sets <- data.frame(set = unname(net$colors), Gene_ID = names(net$colors))
+heatmap_df <- merge(heatmap_df, sets, by = "Gene_ID")
+heatmap_df$set <- factor(heatmap_df$set, levels = c(2, 0, 1))
+heatmap_df$Gene_ID <- factor(heatmap_df$Gene_ID, levels = heatmap_df$Gene_ID[net$dendrograms[[1]]$order])
+
+```
+
+
+```{r fig.height=5, fig.width=10}
+replace = rep(0, 8) %>% as.list
+names(replace) <- LETTERS[1:8]
+theme_set(theme_bw())
+replace_na(heatmap_df, replace = replace)[-2] %>%
+	pivot_longer(cols = c(A, B, C, D, E, F, G, H), 
+							 names_to = "condition", values_to = "LogFC") %>%
+	ggplot(aes(y = condition, x = Gene_ID, fill = LogFC)) +
+	geom_tile() + scale_fill_gradient2(high = "red", low = "blue", 
+																			mid = "white", midpoint = 0, 
+																			name = "Fold change") +
+	theme(axis.text.x = element_blank())
+```
+
